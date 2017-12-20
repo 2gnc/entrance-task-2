@@ -1,0 +1,19 @@
+{
+  "name": "entrance-task-2",
+  "version": "1.0.0",
+  "description": "Тестовое задание по вёрстке для шестой Школы разработки интерфейсов.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/2gnc/entrance-task-2.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/2gnc/entrance-task-2/issues"
+  },
+  "homepage": "https://github.com/2gnc/entrance-task-2#readme"
+}
