@@ -4,12 +4,17 @@ let gulp = require( 'gulp' ),
 	sass = require( 'gulp-sass' ),
 	csso = require( 'gulp-csso' ),
 	pug = require( 'gulp-pug' ),
+	autopref = require( 'gulp-autoprefixer' ),
 	rename = require( 'gulp-rename' ),
 	del = require( 'del' );
 
 gulp.task( 'css', function() {
 	return gulp.src( 'src/styles/main.sass' )
 		.pipe( sass().on('error', sass.logError) )
+		.pipe(autopref({
+			browsers: ['last 2 versions'],
+			cascade: false
+			}))
 		.pipe( gulp.dest( 'temp' ) )
 		.pipe( csso() )
 		.pipe( rename( 'style.min.css' ) )
