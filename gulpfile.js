@@ -21,4 +21,6 @@ gulp.task( 'cleanup', function() {
 
 gulp.task( 'default', console.log( 'it works' ) );
 
+gulp.task( 'dev', console.log( 'тут таски для разработки' ) );
+
 gulp.task( 'production', console.log( 'тут будет большой таск для продакшн' ) );
