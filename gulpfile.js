@@ -1,10 +1,13 @@
 'use strict';
 
-let gulp = require( 'gulp' ),
+const gulp = require( 'gulp' ),
 	sass = require( 'gulp-sass' ),
 	csso = require( 'gulp-csso' ),
 	pug = require( 'gulp-pug' ),
 	autopref = require( 'gulp-autoprefixer' ),
+	concat = require( 'gulp-concat' ),
+	babel = require('gulp-babel'),
+	ugly = require( 'gulp-uglify' ),
 	rename = require( 'gulp-rename' ),
 	del = require( 'del' );
 
@@ -26,6 +29,16 @@ gulp.task( 'html', function() {
 		.pipe( pug() )
 		.pipe( gulp.dest( 'public/' ) );
 } );
+
+gulp.task( 'js', function() {
+	return gulp.src( 'src/blocks/**/**.js' )
+		.pipe( concat('scripts.js') )
+		.pipe( babel({
+			presets: ['env']
+		}) )
+		.pipe( ugly() )
+		.pipe(gulp.dest( 'public/scripts/' ))
+} )
 
 gulp.task( 'cleanup', function() {
 	return del( ['temp/**.*'] );
