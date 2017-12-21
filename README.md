@@ -15,7 +15,21 @@
 * для сборки используется gulp
 * для упрощения кроссбраузерности к проекту подключен normalize.css
 
-### верстка
+### Структура папок
+|
+|--blocks
+|----simlpe-block
+|--node_modules
+|--pages
+|--public
+|----fonts
+|----img
+|----scripts
+|----styles
+|--styles
+|----helpers
+
+### Верстка
 
 
 ### Запуск
