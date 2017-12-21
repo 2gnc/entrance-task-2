@@ -15,5 +15,11 @@
   "bugs": {
     "url": "https://github.com/2gnc/entrance-task-2/issues"
   },
-  "homepage": "https://github.com/2gnc/entrance-task-2#readme"
+  "homepage": "https://github.com/2gnc/entrance-task-2#readme",
+  "dependencies": {
+    "gulp": "^3.9.1"
+  },
+  "devDependencies": {
+    "normalize.css": "^7.0.0"
+  }
 }
