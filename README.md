@@ -42,6 +42,8 @@
 
 Для планирования и прототипирования использую [Draw.io](https://www.draw.io/) и Xmind
 
+* [блоки](https://drive.google.com/file/d/1eX85DT0RUk0LhFVlHwPavc-kp8vO-NmP/view?usp=sharing)
+
 ### Верстка
 * использован свой [кодстайл](http://tgnc.ru/css-%D0%BA%D0%BE%D0%B4%D1%81%D1%82%D0%B0%D0%B9%D0%BB/)
 
