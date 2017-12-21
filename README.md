@@ -16,7 +16,8 @@
 * для упрощения кроссбраузерности к проекту подключен normalize.css
 
 ### Структура папок
-'|
+<pre>
+|
 |--blocks
 |----simlpe-block
 |--node_modules
@@ -27,7 +28,8 @@
 |----scripts
 |----styles
 |--styles
-|----helpers'
+|----helpers
+</pre>
 
 ### Верстка
 
