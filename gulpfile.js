@@ -57,5 +57,7 @@ gulp.task( 'dev', ['sync', 'css', 'html', 'js'], function() {
 	gulp.watch( 'src/**/**.**', ['css', 'html', 'js'] );
 });
 
-gulp.task( 'production', console.log( 'тут будет большой таск для продакшн' ) );
+gulp.task( 'production', ['css', 'html', 'js'], function() {
+	return
+});
 
