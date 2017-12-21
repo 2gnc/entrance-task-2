@@ -9,7 +9,7 @@ const gulp = require( 'gulp' ),
 	babel = require('gulp-babel'),
 	ugly = require( 'gulp-uglify' ),
 	rename = require( 'gulp-rename' ),
-	del = require( 'del' );
+	sync = require( 'browser-sync' );
 
 gulp.task( 'css', function() {
 	return gulp.src( 'src/styles/main.sass' )
@@ -18,16 +18,17 @@ gulp.task( 'css', function() {
 			browsers: ['last 2 versions'],
 			cascade: false
 			}))
-		.pipe( gulp.dest( 'temp' ) )
 		.pipe( csso() )
 		.pipe( rename( 'style.min.css' ) )
-		.pipe( gulp.dest( 'public/styles/' ) );
+		.pipe( gulp.dest( 'public/styles/' ) )
+		.pipe(sync.reload({ stream: true }));
 } );
 
 gulp.task( 'html', function() {
 	return  gulp.src( 'src/pages/**.pug' )
 		.pipe( pug() )
-		.pipe( gulp.dest( 'public/' ) );
+		.pipe( gulp.dest( 'public/' ) )
+		.pipe(sync.reload({ stream: true }));
 } );
 
 gulp.task( 'js', function() {
@@ -38,15 +39,23 @@ gulp.task( 'js', function() {
 		}) )
 		.pipe( ugly() )
 		.pipe(gulp.dest( 'public/scripts/' ))
-} )
+		.pipe(sync.reload({ stream: true }));
+} );
 
 gulp.task( 'cleanup', function() {
 	return del( ['temp/**.*'] );
 } );
 
-gulp.task( 'dev', console.log( 'тут таски для разработки' ) );
+gulp.task( 'sync', function() {
+	sync({
+		server: { baseDir: 'public' },
+		notify: false
+		});
+	});
+
+gulp.task( 'dev', ['sync', 'css', 'html', 'js'], function() {
+	gulp.watch( 'src/**/**.**', ['css', 'html', 'js'] );
+});
 
 gulp.task( 'production', console.log( 'тут будет большой таск для продакшн' ) );
-
-gulp.task( 'default', console.log( 'it works' ) );
 
