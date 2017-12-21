@@ -47,6 +47,9 @@
 * использован свой [кодстайл](http://tgnc.ru/css-%D0%BA%D0%BE%D0%B4%D1%81%D1%82%D0%B0%D0%B9%D0%BB/)
 
 ### Запуск
+
+В корне /entrance-task-2 вполнить: 
+
 ```
 npm i
 gulp production
