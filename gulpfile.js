@@ -25,7 +25,7 @@ gulp.task( 'css', function() {
 } );
 
 gulp.task( 'html', function() {
-	return  gulp.src( 'src/pages/**.pug' )
+	return  gulp.src( 'src/pages/*.pug' )
 		.pipe( pug() )
 		.pipe( gulp.dest( 'public/' ) )
 		.pipe(sync.reload({ stream: true }));
