@@ -1,0 +1,9 @@
+mixin room( roommodifier, name, desc )
+	if roommodifier
+		.room( class = roommodifier )
+			.room__name= name
+			.room__desc= desc
+	else
+		.room
+			.room__name= name
+			.room__desc= desc
