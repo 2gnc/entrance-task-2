@@ -59,8 +59,13 @@
     border-bottom: 1px solid $bordercolor
     /* трансформации */
     /* отображение и поведение: display */
+    display: flex
+    align-items: center
+    justify-content: center
     /* оформление фона */
     /* цвета и оформление текста */
+    font-family: $fontb
+    font-size: 15px
     /* переходы и анимация */
     /* все остальное */
   &__timeline
@@ -121,6 +126,9 @@
     /* цвета и оформление текста */
     /* переходы и анимация */
     /* все остальное */
+  &__day-name
+    margin: 0 15px
+    cursor: pointer
   &__timeslot
     /* content (для псевдоэлементов) */
     /* позиционирование */
