@@ -1,6 +1,6 @@
-mixin room( roommodifier, name, namemodifier, desc )
+mixin room( roommodifier, name, namemodifier, desc, y )
 	if roommodifier
-		.room( class = roommodifier )
+		.room( class = roommodifier, data-y = y )
 			if namemodifier
 				.room__name( class= namemodifier )= name
 				.room__desc= desc
@@ -8,7 +8,7 @@ mixin room( roommodifier, name, namemodifier, desc )
 				.room__name= name
 				.room__desc= desc
 	else
-		.room
+		.room( data-y = y )
 			if namemodifier
 				.room__name( class= namemodifier )= name
 				.room__desc= desc

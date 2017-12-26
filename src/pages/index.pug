@@ -20,53 +20,53 @@ html(lang="en")
 						.icon.icon--arrr
 					.rooms
 						.rooms__floor
-							.rooms__floor-name 7 этаж
-							+room('room--disabled', 'Ржавый Фред', '', '3 - 6 человек')
-							+room('', 'Прачечная', '', 'до 10 человек')
-							+room('', 'Жёлтый дом', 'room__name--selected', 'до 10 человек')
-							+room('room--disabled', 'Оранжевый тюльпан', '', 'до 10 человек')
+							.rooms__floor-name(data-y="1") 7 этаж
+							+room('room--disabled', 'Ржавый Фред', '', '3 - 6 человек', '2')
+							+room('', 'Прачечная', '', 'до 10 человек', '3')
+							+room('', 'Жёлтый дом', 'room__name--selected', 'до 10 человек', '4')
+							+room('room--disabled', 'Оранжевый тюльпан', '', 'до 10 человек', '5')
 						.rooms__floor
-							.rooms__floor-name 6 этаж
-							+room('', 'Джокер', '', '3 - 6 человек')
-							+room('', 'Мариванна', '', '3 - 6 человек')
-							+room('', 'Тонкий Боб', '', '3 - 6 человек')
-							+room('', 'Черная вдова', '', '3 - 6 человек')
-							+room('', 'Белорусский ликер', '', '3 - 6 человек')
+							.rooms__floor-name(data-y="6") 6 этаж
+							+room('', 'Джокер', '', '3 - 6 человек', '7')
+							+room('', 'Мариванна', '', '3 - 6 человек', '8')
+							+room('', 'Тонкий Боб', '', '3 - 6 человек', '9')
+							+room('', 'Черная вдова', '', '3 - 6 человек', '10')
+							+room('', 'Белорусский ликер', '', '3 - 6 человек', '11')
 				.schedule__day
 					.schedule__timeline
-						.schedule__time.schedule__time--first
+						.schedule__time(data-x="1").schedule__time--first
 							span.schedule__hour.schedule__hour--past 8:00
-						.schedule__time
+						.schedule__time(data-x="2")
 							span.schedule__hour.schedule__hour--past 9
-						.schedule__time
+						.schedule__time(data-x="3")
 							span.schedule__hour.schedule__hour--past 10
-						.schedule__time
+						.schedule__time(data-x="4")
 							span.schedule__hour.schedule__hour--past 11
-						.schedule__time
+						.schedule__time(data-x="5")
 							span.schedule__hour 12
-						.schedule__time
+						.schedule__time(data-x="6")
 							span.schedule__hour 13
-						.schedule__time
+						.schedule__time(data-x="7")
 							span.schedule__hour 14
-						.schedule__time
+						.schedule__time(data-x="8")
 							span.schedule__hour 15
-						.schedule__time
+						.schedule__time(data-x="9")
 							span.schedule__hour 16
-						.schedule__time
+						.schedule__time(data-x="10")
 							span.schedule__hour 17
-						.schedule__time
+						.schedule__time(data-x="11")
 							span.schedule__hour 18
-						.schedule__time
+						.schedule__time(data-x="12")
 							span.schedule__hour 19
-						.schedule__time
+						.schedule__time(data-x="13")
 							span.schedule__hour 20
-						.schedule__time
+						.schedule__time(data-x="14")
 							span.schedule__hour 21
-						.schedule__time
+						.schedule__time(data-x="15")
 							span.schedule__hour 22
-						.schedule__time.schedule__time
+						.schedule__time(data-x="16")
 							span.schedule__hour 23
-						.schedule__time.schedule__time--last
+						.schedule__time(data-x="17").schedule__time--last
 					.schedule__chart
 						.schedule__timeslot.schedule__timeslot--first
 						.schedule__timeslot
