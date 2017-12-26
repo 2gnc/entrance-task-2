@@ -1,4 +1,9 @@
-mixin now( time )
-	.now
-		.now__time = time
-		.now__line
+mixin now( time, modifier )
+	if modifier
+		.now(class= modifier)
+			.now__time= time
+			.now__line
+	else
+		.now
+			.now__time= time
+			.now__line
