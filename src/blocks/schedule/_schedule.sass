@@ -46,12 +46,12 @@
     position: relative
     min-height: 600px
     padding-top: 20px
-    border-right: 1px solid $bordercolor
+    border-right: 1px solid $chartborder
     flex-grow: 1
     background-color: $chartbg
     &--first
       width: 32px
-      border-left: 1px solid $bordercolor
+      border-left: 1px solid $chartborder
       flex-grow: 0
     &--last
       width: 13px
@@ -64,27 +64,36 @@
       height: 17px
       margin: 0
   &__innerslot
-    &--empty1
-    &--empty2
-    &--empty3
-    &--empty4
-    &--empty5
-    &--empty6
-    &--empty7
-    &--empty8
-    &--empty9
-    &--empty10
-    &--empty11
-    &--empty12
-    &--busy1
-    &--busy2
-    &--busy3
-    &--busy4
-    &--busy5
-    &--busy6
-    &--busy7
-    &--busy8
-    &--busy9
-    &--busy10
-    &--busy11
-    &--busy12
+    height: 100%
+    &--empty
+      background-color: $noeventcolor
+    &--busy
+      background-color: $eventcolor
+    &--w1
+      width: calc((100/12)*1)
+    &--w2
+      width: calc((100/12)*2)
+    &--w3
+      width: calc((100/12)*3)
+    &--w4
+      width: calc((100/12)*4)
+    &--w5
+      width: calc((100/12)*5)
+    &--w6
+      width: calc((100/12)*6)
+    &--w7
+      width: calc((100/12)*7)
+    &--w8
+      width: calc((100/12)*8)
+    &--w9
+      width: calc((100/12)*9)
+    &--w10
+      width: calc((100/12)*10)
+    &--w11
+      width: calc((100/12)*11)
+    &--w12
+      width: calc(100% + 1px)
+      border-right: 1px solid #C0D1E4
+    &--last
+      width: 100%
+      border-right: none
