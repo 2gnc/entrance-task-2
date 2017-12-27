@@ -43,7 +43,7 @@
 
 Для планирования и прототипирования использую [Draw.io](https://www.draw.io/) и Xmind (см папку ```/_prepare```)
 
-* [блоки](https://drive.google.com/file/d/1eX85DT0RUk0LhFVlHwPavc-kp8vO-NmP/view?usp=sharing)
+* [блоки](https://github.com/2gnc/entrance-task-2/blob/master/_prepare/bem.xmind)
 
 ### Верстка
 * по заданию сверстаны статические страницы: 
