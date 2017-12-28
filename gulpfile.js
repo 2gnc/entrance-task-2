@@ -18,7 +18,9 @@ gulp.task( 'css', function() {
 			browsers: ['last 2 versions'],
 			cascade: false
 			}))
-		.pipe( csso() )
+		.pipe( csso({
+			restructure: false
+		}) )
 		.pipe( rename( 'style.min.css' ) )
 		.pipe( gulp.dest( 'public/styles/' ) )
 		.pipe(sync.reload({ stream: true }));
