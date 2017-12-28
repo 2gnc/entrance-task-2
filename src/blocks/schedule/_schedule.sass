@@ -84,9 +84,12 @@
   &__innerslot
     height: 100%
     display: inline-block
+    cursor: pointer
 
     &--busy
       background-color: $eventcolor
+      &:hover
+        background-color: $eventhovercolor
 
     &--last
       width: 100%
@@ -106,6 +109,12 @@
     width: calc(1px + ((100%/12) * #{$i}))
     border-right: 1px solid #C0D1E4
     margin-right: -1px
+
+@for $i from 1 through 11
+  .schedule__innerslot--w#{$i}r:hover
+    //width: calc( (100%/12) * #{$i} )
+    border-right: 1px solid #C0D1E4
+    //margin-right: 0
 
 @for $i from 1 through 12
   @if $i != 12
