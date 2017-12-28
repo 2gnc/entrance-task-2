@@ -2,6 +2,8 @@
 	position: absolute
 	top: -33px
 	z-index: 2
+	width: 1px
+
 	&__time
 		width: 49px
 		border-radius: 100px
@@ -11,31 +13,16 @@
 		line-height: 20px
 		text-align: center
 		font-size: 11px
+
 	&__line
 		min-height: 100vh
 		width: 1px
 		background-color: $btnprimarycolor
-	&--right1
-		left: calc(100% / 12)
-	&--right2
-		left: calc((100% / 12)*2)
-	&--right3
-		left: calc((100% / 12)*3)
-	&--right4
-		left: calc((100% / 12)*4)
-	&--right5
-		left: calc((100% / 12)*5)
-	&--right6
-		left: calc((100% / 12)*6)
-	&--right7
-		left: calc((100% / 12)*7)
-	&--right8
-		left: calc((100% / 12)*8)
-	&--right9
-		left: calc((100% / 12)*9)
-	&--right10
-		left: calc((100% / 12)*10)
-	&--right11
-		left: calc((100% / 12)*11)
-	&--right12
-		left: 100%
+
+@for $i from 1 through 12
+  @if $i != 12
+    .now--right#{$i}
+      left: calc( (100% / 12) * #{$i} )
+  @else
+    .now--right#{$i}
+      left: 100%
