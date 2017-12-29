@@ -5,7 +5,12 @@ html(lang="en")
 	head
 		meta(charset="UTF-8")
 		title Яндекс Переговорки: Главная
+		script(src="https://code.jquery.com/jquery-3.2.1.min.js")
+		script(src="scripts/vendors/jquery-ui-1.12.1/jquery-ui.min.js")
+		script(src="scripts/vendors/datepicker-ru.js")
+		link(rel="stylesheet", href="scripts/vendors/jquery-ui-1.12.1/jquery-ui.theme.min.css")
 		link(rel="stylesheet", href="styles/style.min.css")
+		script(src="scripts/scripts.js")
 	body.app
 		header.header
 			.wrapper.header__layout
@@ -71,91 +76,91 @@ html(lang="en")
 						.schedule__timeslot.schedule__timeslot--first
 							.schedule__rowslot.schedule__rowslot--floor(data-x="1" data-y="1")
 							.schedule__rowslot(data-x="1" data-y="2")
-								.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12
+								.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12.schedule__innerslot--brdr
 							.schedule__rowslot(data-x="1" data-y="3")
-								.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12
+								.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12.schedule__innerslot--brdr
 							.schedule__rowslot(data-x="1" data-y="4")
-								.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12
+								.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12.schedule__innerslot--brdr
 							.schedule__rowslot(data-x="1" data-y="5")
-								.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12
+								.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12.schedule__innerslot--brdr
 							.schedule__rowslot.schedule__rowslot--floor(data-x="1" data-y="6")
 							.schedule__rowslot(data-x="1" data-y="7")
-								.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12
+								.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12.schedule__innerslot--brdr
 							.schedule__rowslot(data-x="1" data-y="8")
-								.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12
+								.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12.schedule__innerslot--brdr
 							.schedule__rowslot(data-x="1" data-y="9")
-								.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12
+								.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12.schedule__innerslot--brdr
 							.schedule__rowslot(data-x="1" data-y="10")
-								.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12
+								.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12.schedule__innerslot--brdr
 							.schedule__rowslot(data-x="1" data-y="11")
-								.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12
+								.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12.schedule__innerslot--brdr
 						.schedule__timeslot
 							.schedule__rowslot.schedule__rowslot--floor(data-x="2" data-y="1")
 							.schedule__rowslot(data-x="2" data-y="2")
-								.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12
+								.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12.schedule__innerslot--brdr
 							.schedule__rowslot(data-x="2" data-y="3")
-								.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12
+								.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12.schedule__innerslot--brdr
 							.schedule__rowslot(data-x="2" data-y="4")
-								.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12
+								.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12.schedule__innerslot--brdr
 							.schedule__rowslot(data-x="2" data-y="5")
-								.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12
+								.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12.schedule__innerslot--brdr
 							.schedule__rowslot.schedule__rowslot--floor(data-x="2" data-y="6")
 							.schedule__rowslot(data-x="2" data-y="7")
-								.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12
+								.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12.schedule__innerslot--brdr
 							.schedule__rowslot(data-x="2" data-y="8")
-								.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12
+								.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12.schedule__innerslot--brdr
 							.schedule__rowslot(data-x="2" data-y="9")
-								.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12
+								.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12.schedule__innerslot--brdr
 							.schedule__rowslot(data-x="2" data-y="10")
-								.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12
+								.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12.schedule__innerslot--brdr
 							.schedule__rowslot(data-x="2" data-y="11")
-								.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12
+								.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12.schedule__innerslot--brdr
 						.schedule__timeslot
 							.schedule__rowslot.schedule__rowslot--floor(data-x="3" data-y="1")
 							.schedule__rowslot(data-x="3" data-y="2")
-								.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12
+								.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12.schedule__innerslot--brdr
 							.schedule__rowslot(data-x="3" data-y="3")
-								.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12
+								.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12.schedule__innerslot--brdr
 							.schedule__rowslot(data-x="3" data-y="4")
-								.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12
+								.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12.schedule__innerslot--brdr
 							.schedule__rowslot(data-x="3" data-y="5")
-								.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12
+								.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12.schedule__innerslot--brdr
 							.schedule__rowslot.schedule__rowslot--floor(data-x="3" data-y="6")
 							.schedule__rowslot(data-x="3" data-y="7")
-								.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12
+								.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12.schedule__innerslot--brdr
 							.schedule__rowslot(data-x="3" data-y="8")
-								.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12
+								.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12.schedule__innerslot--brdr
 							.schedule__rowslot(data-x="3" data-y="9")
-								.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12
+								.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12.schedule__innerslot--brdr
 							.schedule__rowslot(data-x="3" data-y="10")
-								.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12
+								.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12.schedule__innerslot--brdr
 							.schedule__rowslot(data-x="3" data-y="11")
-								.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12
+								.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12.schedule__innerslot--brdr
 						.schedule__timeslot
 							.schedule__rowslot.schedule__rowslot--floor(data-x="4" data-y="1")
 							.schedule__rowslot(data-x="4" data-y="2")
-								.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12
+								.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12.schedule__innerslot--brdr
 							.schedule__rowslot(data-x="4" data-y="3")
-								.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12
+								.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12.schedule__innerslot--brdr
 							.schedule__rowslot(data-x="4" data-y="4")
-								.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12
+								.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12.schedule__innerslot--brdr
 							.schedule__rowslot(data-x="4" data-y="5")
-								.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12
+								.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12.schedule__innerslot--brdr
 							.schedule__rowslot.schedule__rowslot--floor(data-x="4" data-y="6")
 							.schedule__rowslot(data-x="4" data-y="7")
-								.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12
+								.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12.schedule__innerslot--brdr
 							.schedule__rowslot(data-x="4" data-y="8")
-								.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12
+								.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12.schedule__innerslot--brdr
 							.schedule__rowslot(data-x="4" data-y="9")
-								.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12
+								.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12.schedule__innerslot--brdr
 							.schedule__rowslot(data-x="4" data-y="10")
-								.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12
+								.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12.schedule__innerslot--brdr
 							.schedule__rowslot(data-x="4" data-y="11")
-								.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12
+								.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12.schedule__innerslot--brdr
 						.schedule__timeslot
 							.schedule__rowslot.schedule__rowslot--floor(data-x="5" data-y="1")
 							.schedule__rowslot(data-x="5" data-y="2")
-								.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12
+								.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12.schedule__innerslot--brdr
 							.schedule__rowslot(data-x="5" data-y="3")
 								.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w1
 								.schedule__innerslot.schedule__innerslot--emptyw11
@@ -164,15 +169,15 @@ html(lang="en")
 								.schedule__innerslot.schedule__innerslot--emptyw11
 									.btn.btn--newevent +
 							.schedule__rowslot(data-x="5" data-y="5")
-								.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12
+								.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12.schedule__innerslot--brdr
 							.schedule__rowslot.schedule__rowslot--floor(data-x="5" data-y="6")
 							.schedule__rowslot(data-x="5" data-y="7")
 								.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w1
 								.schedule__innerslot.schedule__innerslot--emptyw11
 							.schedule__rowslot(data-x="5" data-y="8")
-								.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12
+								.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12.schedule__innerslot--brdr
 							.schedule__rowslot(data-x="5" data-y="9")
-								.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12(data-eventid="9")
+								.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12(data-eventid="9").schedule__innerslot--brdr
 							.schedule__rowslot(data-x="5" data-y="10")
 								.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w9
 								.schedule__innerslot.schedule__innerslot--emptyw3
@@ -183,19 +188,19 @@ html(lang="en")
 						.schedule__timeslot
 							.schedule__rowslot.schedule__rowslot--floor(data-x="6" data-y="1")
 							.schedule__rowslot(data-x="6" data-y="2")
-								.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12
+								.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12.schedule__innerslot--brdr
 							.schedule__rowslot(data-x="6" data-y="3")
 								.schedule__innerslot.schedule__innerslot--emptyw12
 							.schedule__rowslot(data-x="6" data-y="4")
 								.schedule__innerslot.schedule__innerslot--emptyw12
 							.schedule__rowslot(data-x="6" data-y="5")
-								.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12
+								.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12.schedule__innerslot--brdr
 							.schedule__rowslot.schedule__rowslot--floor(data-x="6" data-y="6")
 							.schedule__rowslot(data-x="6" data-y="7")
 								.schedule__innerslot.schedule__innerslot--emptyw11
 								.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w1r(data-eventid="1")
 							.schedule__rowslot(data-x="6" data-y="8")
-								.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12(data-eventid="5")
+								.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12(data-eventid="5").schedule__innerslot--brdr
 							.schedule__rowslot(data-x="6" data-y="9")
 								.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w4(data-eventid="9")
 								.schedule__innerslot.schedule__innerslot--emptyw8
@@ -207,14 +212,14 @@ html(lang="en")
 						.schedule__timeslot
 							.schedule__rowslot.schedule__rowslot--floor(data-x="7" data-y="1")
 							.schedule__rowslot(data-x="7" data-y="2")
-								.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12
+								.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12.schedule__innerslot--brdr
 							.schedule__rowslot(data-x="7" data-y="3")
 								.schedule__innerslot.schedule__innerslot--emptyw12
 							.schedule__rowslot(data-x="7" data-y="4")
 								.schedule__innerslot.schedule__innerslot--emptyw10
 								.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w2r
 							.schedule__rowslot(data-x="7" data-y="5")
-								.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12
+								.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12.schedule__innerslot--brdr
 							.schedule__rowslot.schedule__rowslot--floor(data-x="7" data-y="6")
 							.schedule__rowslot(data-x="7" data-y="7")
 								.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w7(data-eventid="1")
@@ -230,18 +235,18 @@ html(lang="en")
 								.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w3
 								.schedule__innerslot.schedule__innerslot--emptyw5
 							.schedule__rowslot(data-x="7" data-y="11")
-								.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12
+								.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12.schedule__innerslot--brdr
 						.schedule__timeslot
 							.schedule__rowslot.schedule__rowslot--floor(data-x="8" data-y="1")
 							.schedule__rowslot(data-x="8" data-y="2")
-								.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12
+								.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12.schedule__innerslot--brdr
 							.schedule__rowslot(data-x="8" data-y="3")
 								.schedule__innerslot.schedule__innerslot--emptyw1
 								.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w11r
 							.schedule__rowslot(data-x="8" data-y="4")
-								.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12
+								.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12.schedule__innerslot--brdr
 							.schedule__rowslot(data-x="8" data-y="5")
-								.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12
+								.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12.schedule__innerslot--brdr
 							.schedule__rowslot.schedule__rowslot--floor(data-x="8" data-y="6")
 							.schedule__rowslot(data-x="8" data-y="7")
 								.schedule__innerslot.schedule__innerslot--emptyw12
@@ -249,19 +254,19 @@ html(lang="en")
 								.schedule__innerslot.schedule__innerslot--emptyw8
 								.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w4r(data-eventid="6")
 							.schedule__rowslot(data-x="8" data-y="9")
-								.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12(data-eventid="10")
+								.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12(data-eventid="10").schedule__innerslot--brdr
 							.schedule__rowslot(data-x="8" data-y="10")
 								.schedule__innerslot.schedule__innerslot--emptyw12
 							.schedule__rowslot(data-x="8" data-y="11")
-								.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12
+								.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12.schedule__innerslot--brdr
 						.schedule__timeslot
 							.schedule__rowslot.schedule__rowslot--floor(data-x="9" data-y="1")
 							.schedule__rowslot(data-x="9" data-y="2")
-								.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12
+								.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12.schedule__innerslot--brdr
 							.schedule__rowslot(data-x="9" data-y="3")
-								.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12
+								.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12.schedule__innerslot--brdr
 							.schedule__rowslot(data-x="9" data-y="4")
-								.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12
+								.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12.schedule__innerslot--selected
 							.schedule__rowslot(data-x="9" data-y="5")
 								.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12
 							.schedule__rowslot.schedule__rowslot--floor(data-x="9" data-y="6")
@@ -269,24 +274,24 @@ html(lang="en")
 								.schedule__innerslot.schedule__innerslot--emptyw4
 								.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w8r(data-eventid="2")
 							.schedule__rowslot(data-x="9" data-y="8")
-								.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12(data-eventid="6")
+								.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12(data-eventid="6").schedule__innerslot--brdr
 							.schedule__rowslot(data-x="9" data-y="9")
-								.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12(data-eventid="10")
+								.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12(data-eventid="10").schedule__innerslot--brdr
 							.schedule__rowslot(data-x="9" data-y="10")
 								.schedule__innerslot.schedule__innerslot--emptyw4
 								.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w8r
 							.schedule__rowslot(data-x="9" data-y="11")
-								.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12
+								.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12.schedule__innerslot--brdr
 						.schedule__timeslot
 							.schedule__rowslot.schedule__rowslot--floor(data-x="10" data-y="1")
 							.schedule__rowslot(data-x="10" data-y="2")
-								.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12
+								.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12.schedule__innerslot--brdr
 							.schedule__rowslot(data-x="10" data-y="3")
-								.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12
+								.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12.schedule__innerslot--brdr
 							.schedule__rowslot(data-x="10" data-y="4")
-								.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12
+								.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12.schedule__innerslot--selected
 							.schedule__rowslot(data-x="10" data-y="5")
-								.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12
+								.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12.schedule__innerslot--brdr
 							.schedule__rowslot.schedule__rowslot--floor(data-x="10" data-y="6")
 							.schedule__rowslot(data-x="10" data-y="7")
 								.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w11(data-eventid="2")
@@ -306,13 +311,13 @@ html(lang="en")
 						.schedule__timeslot
 							.schedule__rowslot.schedule__rowslot--floor(data-x="11" data-y="1")
 							.schedule__rowslot(data-x="11" data-y="2")
-								.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12
+								.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12.schedule__innerslot--brdr
 							.schedule__rowslot(data-x="11" data-y="3")
-								.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12
+								.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12.schedule__innerslot--brdr
 							.schedule__rowslot(data-x="11" data-y="4")
-								.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12
+								.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12.schedule__innerslot--brdr
 							.schedule__rowslot(data-x="11" data-y="5")
-								.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12
+								.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12.schedule__innerslot--brdr
 							.schedule__rowslot.schedule__rowslot--floor(data-x="11" data-y="6")
 							.schedule__rowslot(data-x="11" data-y="7")
 								.schedule__innerslot.schedule__innerslot--emptyw2
@@ -334,13 +339,13 @@ html(lang="en")
 						.schedule__timeslot
 							.schedule__rowslot.schedule__rowslot--floor(data-x="12" data-y="1")
 							.schedule__rowslot(data-x="12" data-y="2")
-								.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12
+								.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12.schedule__innerslot--brdr
 							.schedule__rowslot(data-x="12" data-y="3")
-								.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12
+								.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12.schedule__innerslot--brdr
 							.schedule__rowslot(data-x="12" data-y="4")
-								.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12
+								.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12.schedule__innerslot--brdr
 							.schedule__rowslot(data-x="12" data-y="5")
-								.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12
+								.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12.schedule__innerslot--brdr
 							.schedule__rowslot.schedule__rowslot--floor(data-x="12" data-y="6")
 							.schedule__rowslot(data-x="12" data-y="7")
 								.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w3(data-eventid="3")
@@ -361,90 +366,90 @@ html(lang="en")
 						.schedule__timeslot
 							.schedule__rowslot.schedule__rowslot--floor(data-x="13" data-y="1")
 							.schedule__rowslot(data-x="13" data-y="2")
-								.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12
+								.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12.schedule__innerslot--brdr
 							.schedule__rowslot(data-x="13" data-y="3")
-								.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12
+								.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12.schedule__innerslot--brdr
 							.schedule__rowslot(data-x="13" data-y="4")
-								.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12
+								.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12.schedule__innerslot--brdr
 							.schedule__rowslot(data-x="13" data-y="5")
-								.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12
+								.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12.schedule__innerslot--brdr
 							.schedule__rowslot.schedule__rowslot--floor(data-x="13" data-y="6")
 							.schedule__rowslot(data-x="13" data-y="7")
 								.schedule__innerslot.schedule__innerslot--emptyw10
 								.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w2r(data-eventid="4")
 							.schedule__rowslot(data-x="13" data-y="8")
-								.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12(data-eventid="8")
+								.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12(data-eventid="8").schedule__innerslot--brdr
 							.schedule__rowslot(data-x="13" data-y="9")
 								.schedule__innerslot.schedule__innerslot--emptyw12
 							.schedule__rowslot(data-x="13" data-y="10")
 								.schedule__innerslot.schedule__innerslot--emptyw7
 								.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w5r
 							.schedule__rowslot(data-x="13" data-y="11")
-								.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12
+								.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12.schedule__innerslot--brdr
 						.schedule__timeslot
 							.schedule__rowslot.schedule__rowslot--floor(data-x="14" data-y="1")
 							.schedule__rowslot(data-x="14" data-y="2")
-								.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12
+								.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12.schedule__innerslot--brdr
 							.schedule__rowslot(data-x="14" data-y="3")
-								.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12
+								.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12.schedule__innerslot--brdr
 							.schedule__rowslot(data-x="14" data-y="4")
-								.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12
+								.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12.schedule__innerslot--brdr
 							.schedule__rowslot(data-x="14" data-y="5")
-								.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12
+								.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12.schedule__innerslot--brdr
 							.schedule__rowslot.schedule__rowslot--floor(data-x="14" data-y="6")
 							.schedule__rowslot(data-x="14" data-y="7")
-								.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12(data-eventid="4")
+								.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12(data-eventid="4").schedule__innerslot--brdr
 							.schedule__rowslot(data-x="14" data-y="8")
-								.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12(data-eventid="8")
+								.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12(data-eventid="8").schedule__innerslot--brdr
 							.schedule__rowslot(data-x="14" data-y="9")
 								.schedule__innerslot.schedule__innerslot--emptyw12
 							.schedule__rowslot(data-x="14" data-y="10")
-								.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12
+								.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12.schedule__innerslot--brdr
 							.schedule__rowslot(data-x="14" data-y="11")
-								.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12
+								.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12.schedule__innerslot--brdr
 						.schedule__timeslot
 							.schedule__rowslot.schedule__rowslot--floor(data-x="15" data-y="1")
 							.schedule__rowslot(data-x="15" data-y="2")
-								.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12
+								.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12.schedule__innerslot--brdr
 							.schedule__rowslot(data-x="15" data-y="3")
-								.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12
+								.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12.schedule__innerslot--brdr
 							.schedule__rowslot(data-x="15" data-y="4")
-								.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12
+								.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12.schedule__innerslot--brdr
 							.schedule__rowslot(data-x="15" data-y="5")
-								.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12
+								.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12.schedule__innerslot--brdr
 							.schedule__rowslot.schedule__rowslot--floor(data-x="15" data-y="6")
 							.schedule__rowslot(data-x="15" data-y="7")
-								.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12(data-eventid="4")
+								.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12(data-eventid="4").schedule__innerslot--brdr
 							.schedule__rowslot(data-x="15" data-y="8")
-								.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12(data-eventid="8")
+								.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12(data-eventid="8").schedule__innerslot--brdr
 							.schedule__rowslot(data-x="15" data-y="9")
 								.schedule__innerslot.schedule__innerslot--emptyw9
 								.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w3r(data-eventid="12")
 							.schedule__rowslot(data-x="15" data-y="10")
-								.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12
+								.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12.schedule__innerslot--brdr
 							.schedule__rowslot(data-x="15" data-y="11")
-								.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12
+								.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12.schedule__innerslot--brdr
 						.schedule__timeslot
 							.schedule__rowslot.schedule__rowslot--floor(data-x="16" data-y="1")
 							.schedule__rowslot(data-x="16" data-y="2")
-								.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12
+								.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12.schedule__innerslot--brdr
 							.schedule__rowslot(data-x="16" data-y="3")
-								.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12
+								.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12.schedule__innerslot--brdr
 							.schedule__rowslot(data-x="16" data-y="4")
-								.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12
+								.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12.schedule__innerslot--brdr
 							.schedule__rowslot(data-x="16" data-y="5")
-								.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12
+								.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12.schedule__innerslot--brdr
 							.schedule__rowslot.schedule__rowslot--floor(data-x="16" data-y="6")
 							.schedule__rowslot(data-x="16" data-y="7")
-								.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12(data-eventid="4")
+								.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12(data-eventid="4").schedule__innerslot--brdr
 							.schedule__rowslot(data-x="16" data-y="8")
-								.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12(data-eventid="8")
+								.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12(data-eventid="8").schedule__innerslot--brdr
 							.schedule__rowslot(data-x="16" data-y="9")
-								.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12(data-eventid="12")
+								.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12(data-eventid="12").schedule__innerslot--brdr
 							.schedule__rowslot(data-x="16" data-y="10")
-								.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12
+								.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12.schedule__innerslot--brdr
 							.schedule__rowslot(data-x="16" data-y="11")
-								.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12
+								.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12.schedule__innerslot--brdr
 						.schedule__timeslot.schedule__timeslot--last
 							.schedule__rowslot.schedule__rowslot--floor(data-x="17" data-y="1")
 							.schedule__rowslot(data-x="17" data-y="2")
