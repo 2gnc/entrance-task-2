@@ -34,7 +34,7 @@ gulp.task( 'html', function() {
 } );
 
 gulp.task( 'js', function() {
-	return gulp.src( ['src/blocks/**/**.js', 'src/vendors/**/**.js'] )
+	return gulp.src( 'src/blocks/**/**.js' )
 		.pipe( concat('scripts.js') )
 		.pipe( babel({
 			presets: ['env']
