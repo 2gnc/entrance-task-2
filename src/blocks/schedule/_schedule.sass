@@ -89,13 +89,17 @@
       width: 100%
       border-right: none
 
-    &--brdr
-      width: calc( 1px + 100% )
-      border-right: 1px solid #C0D1E4
-
     &--selected
     	background-color: $eventhovercolor
     	border-right: 1px solid $eventhovercolor
+  &__event
+    position: absolute
+    z-index: 2
+    height: 100%
+    background-color: $eventhovercolor
+
+    &--w24
+      width: calc(2px + 200%)
 
 @for $i from 1 through 12
   @if $i != 12
@@ -104,16 +108,13 @@
   @else
     .schedule__innerslot--w#{$i}
       width: calc( 1px + ((100%/12) * #{$i}) )
+      border-right: 1px solid #C0D1E4
 
 @for $i from 1 through 11
   .schedule__innerslot--w#{$i}r
-    width: calc(1px + ((100%/12) * #{$i}))
+    width: calc(2px + ((100%/12) * #{$i}))
     border-right: 1px solid #C0D1E4
-    margin-right: -1px
-
-@for $i from 1 through 11
-  .schedule__innerslot--w#{$i}r:hover
-    border-right: 1px solid #C0D1E4
+    margin-right: -2px
 
 @for $i from 1 through 12
   @if $i != 12
@@ -124,3 +125,5 @@
     .schedule__innerslot--emptyw#{$i}
       background-color: $noeventcolor
       width: 100%
+
+
