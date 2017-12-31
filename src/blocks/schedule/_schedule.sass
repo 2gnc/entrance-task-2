@@ -10,22 +10,6 @@
   &__aside
     width: 245px
 
-  &__day-to-display
-    height: 46px
-    border-bottom: 1px solid $bordercolor
-    display: flex
-    align-items: center
-    justify-content: center
-    font-family: $fontmed
-    font-size: 15px
-
-  &__timeline
-    height: 46px
-    border-bottom: 1px solid $bordercolor
-    display: flex
-    align-items: center
-    font-size: 11px
-
   &__time
     width: 66px
     color: $timeline
@@ -51,9 +35,18 @@
   &__chart
     display: flex
 
-  &__day-name
-    margin: 0 15px
+  &__day-date
+    text-align: center
+    width: 150px
+    margin: 0
+    padding: 0
+    border: none
     cursor: pointer
+    font-size: 15px
+    line-height: 15px
+
+    &:focus
+      outline: none
 
   &__timeslot
     position: relative
