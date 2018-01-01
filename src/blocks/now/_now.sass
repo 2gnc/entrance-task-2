@@ -1,23 +1,23 @@
 .now
-	position: absolute
-	top: -33px
-	z-index: 2
-	width: 1px
-
-	&__time
-		width: 49px
-		border-radius: 100px
-		transform: translateX(-50%)
-		background-color: $btnprimarycolor
-		color: #ffffff
-		line-height: 20px
-		text-align: center
-		font-size: 11px
-
-	&__line
-		min-height: 100vh
-		width: 1px
-		background-color: $btnprimarycolor
+  position: absolute
+  top: -33px
+  z-index: 2
+  width: 1px
+  &__time
+    position: absolute
+    z-index: 100
+    width: 49px
+    border-radius: 100px
+    transform: translateX(-50%)
+    background-color: $btnprimarycolor
+    color: #ffffff
+    line-height: 20px
+    text-align: center
+    font-size: 11px
+  &__line
+    min-height: 100vh
+    width: 1px
+    background-color: $btnprimarycolor
 
 @for $i from 1 through 12
   @if $i != 12
