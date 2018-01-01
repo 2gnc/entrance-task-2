@@ -20,7 +20,8 @@ html(lang="en")
 			.wrapper.schedule__layout
 				.timing__day-to-display
 					.icon.icon--arrl
-					input.schedule__day-date(type="text" value="14 дек · Сегодня" )
+					input(type="text" hidden id="datetodisplay" value="14/12/2017")
+					label.schedule__day-date(for="datetodisplay" ) 14 дек · Сегодня
 					.icon.icon--arrr
 				.timing__timeline
 					.schedule__time(data-x="1").schedule__time--first
