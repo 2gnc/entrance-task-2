@@ -1,1 +1,45 @@
 .tooltip
+  position: absolute
+  top: 100%
+  left: 50%
+  width: 338px
+  height: 113px
+  padding: 16px
+  border-radius: 8px
+  box-shadow: 0 1px 16px 0 rgba(0,44,92,0.28)
+  background-color: $noeventcolor
+  transform: translate(-50%)
+
+  &::before
+    content: ''
+    position: absolute
+    left: 50%
+    top: -15%
+    border: 8px solid transparent
+    border-bottom: 10px solid $noeventcolor
+    transform: translate(-50%)
+
+  &__heading
+    line-height: 24px
+    font-family: $fontb
+    font-size: 15px
+
+  &__icon
+    position: absolute
+    top: 8px
+    right: 8px
+
+  &__info
+    margin-top: 3px
+    line-height: 17px
+    font-family: $fontr
+
+  &__info-where
+    margin-left: 12px
+
+  &__users
+    display: flex
+    padding-top: 14px
+
+  &__other-users
+    line-height: 24px
