@@ -5,8 +5,6 @@
 * https://yandex-shri-msk-2018.github.io/entrance-task-2/touch-guide/
 * https://yandex-shri-msk-2018.github.io/entrance-task-2/desktop-guide/
 
-
-
 ## Описание решения
 
 ### Инфраструктура
@@ -50,7 +48,7 @@
 ### Верстка
 * по заданию сверстаны статические страницы: 
 1. ```/public/index.html```
-2. Два
+2. ```/public/index-calendar.html```
 3. Три 
 4. ...
 
