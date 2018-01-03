@@ -19,7 +19,7 @@ html(lang="en")
 						input(type="text" id="datetoday" class="timing__input timing__input--activated" value="14 дек")
 						label.timing__label(for="datetoday") · Сегодня
 						.icon.icon--arrr
-					.calendar.calendar--three-months
+					+calendar(3)
 					.timing__timeline
 						.schedule__time(data-x="1").schedule__time--first
 							span.schedule__hour.schedule__hour--past 8:00
@@ -267,19 +267,6 @@ html(lang="en")
 									.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12
 								.schedule__rowslot(data-x="9" data-y="4")
 									.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12
-										.schedule__event.schedule__event--w24
-											.tooltip
-												.icon.icon--edit.tooltip__icon
-												.tooltip__heading Рассуждения о высоком
-												.tooltip__info
-													span.tooltip__info-when 14 декабря, 15:00 - 17:00
-													span.tooltip__info-where ·
-													span.tooltip__info-where Жёлтый дом
-												.tooltip__users
-													.user.user--in-event
-														img.user__pic(src="https://avatars2.githubusercontent.com/u/25460115?s=40&v=4")
-														.user__name Дарт Вейдер
-													.tooltip__other-users и 12 участников
 								.schedule__rowslot(data-x="9" data-y="5")
 									.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12
 								.schedule__rowslot.schedule__rowslot--floor(data-x="9" data-y="6")
