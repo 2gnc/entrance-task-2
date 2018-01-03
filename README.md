@@ -49,7 +49,7 @@
 * по заданию сверстаны статические страницы: 
 1. ```/public/index.html```
 2. ```/public/index-calendar.html```
-3. Три 
+3. ```/public/new-event.html``` 
 4. ...
 
 * использован свой [кодстайл](http://tgnc.ru/css-%D0%BA%D0%BE%D0%B4%D1%81%D1%82%D0%B0%D0%B9%D0%BB/)
