@@ -10,3 +10,41 @@ html(lang="en")
 		header.header
 			.wrapper.header__layout
 				+logo('#', '../img/logo.svg')
+		form.event( method="GET" action="#" )
+			.event__wrapper
+				.event__heading
+					.caption Новая встреча
+					.icon.icon--close
+				.event__body
+					.event__col
+						label(for="eventTheme").label Тема
+						input(type="text" id="eventTheme" placeholder="О чем будете говорить?").event__text-inpt
+						label(for="eventUsersInpt").label Участники
+						input(type="text" id="eventUsersInpt" placeholder="Например, Тор Одинович").event__text-inpt
+						.event__participants
+							.user.user--in-event
+								img(src="https://pbs.twimg.com/profile_images/660254077947744256/tTt22r3f.png").user__pic
+								.user__name Лекс Лютер
+								.icon.icon--close
+							.user.user--in-event
+								img(src="https://i.mycdn.me/image?id=858985521355&ts=00000000ca0000031b&plc=WEB&tkn=*mSbbxyd2u6Q3hZMyXBNdpg-nDqo&fn=sqr_64").user__pic
+								.user__name Томас Андерсон
+								.icon.icon--close
+							.user.user--in-event
+								img(src="https://yt3.ggpht.com/-2f7jk6z4gIM/AAAAAAAAAAI/AAAAAAAAAAA/38an6LUMtnc/s48-c-k-no-mo-rj-c0xffffff/photo.jpg").user__pic
+								.user__name Дарт Вейдер
+								.icon.icon--close
+					.event__col
+						.date-time-inpt
+							.date-time-inpt__date
+								.label
+							.date-time-inpt__time
+								.label
+							.date-time-inpt__time
+								.label
+						.event__recomendations
+							.label
+			.event__footer
+				.event__buttons
+					button.btn.btn--grey Отмена
+					button.btn Создать встречу
