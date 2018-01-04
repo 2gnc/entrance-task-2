@@ -1,6 +1,14 @@
 .inpt
   height: 38px
   line-height: 38px
-  padding: 10px
+  padding: 0 10px
   border: 2px solid $bordercolor
   border-radius: 4px
+
+  &:focus
+    outline: none
+    border-color: $btnprimarycolor
+
+  &::placeholder
+    color: $past
+    letter-spacing: 0.47px
