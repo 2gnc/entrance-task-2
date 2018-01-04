@@ -6,6 +6,9 @@ html(lang="en")
 		meta(charset="UTF-8")
 		title Яндекс Переговорки: Новая встреча
 		link(rel="stylesheet", href="styles/style.min.css")
+		script(defer src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js")
+		script(defer src="https://cdnjs.cloudflare.com/ajax/libs/jquery.nicescroll/3.7.0/jquery.nicescroll.min.js")
+		script(defer src="scripts/scripts.js")
 	body.app
 		header.header
 			.wrapper.header__layout
@@ -22,20 +25,34 @@ html(lang="en")
 							input(type="text" id="eventTheme" placeholder="О чем будете говорить?").inpt.event__text-inpt
 						.event__row
 							label(for="eventUsersInpt").label Участники
-							input(type="text" id="eventUsersInpt" placeholder="Например, Тор Одинович").inpt.event__text-inpt
+							input(type="text" id="eventUsersInpt" placeholder="Например, Тор Одинович" autofocus).inpt.event__text-inpt
 						.event__participants
-							.user.user--in-event
-								img(src="https://pbs.twimg.com/profile_images/660254077947744256/tTt22r3f.png").user__pic
-								.user__name.user__name--in-event Лекс Лютер
-								.icon.icon--close
-							.user.user--in-event
-								img(src="https://i.mycdn.me/image?id=858985521355&ts=00000000ca0000031b&plc=WEB&tkn=*mSbbxyd2u6Q3hZMyXBNdpg-nDqo&fn=sqr_64").user__pic
-								.user__name.user__name--in-event Томас Андерсон
-								.icon.icon--close
-							.user.user--in-event
-								img(src="https://yt3.ggpht.com/-2f7jk6z4gIM/AAAAAAAAAAI/AAAAAAAAAAA/38an6LUMtnc/s48-c-k-no-mo-rj-c0xffffff/photo.jpg").user__pic
-								.user__name.user__name--in-event Дарт Вейдер
-								.icon.icon--close
+							.autocomplete
+								.autocomplete__wrapper
+									.user.user--listed
+										img(src="https://pbs.twimg.com/profile_images/660254077947744256/tTt22r3f.png").user__pic
+										.user__name Лекс Лютер
+										.user__desc &middot; 7 этаж
+									.user.user--listed
+										img(src="https://i.mycdn.me/image?id=858985521355&ts=00000000ca0000031b&plc=WEB&tkn=*mSbbxyd2u6Q3hZMyXBNdpg-nDqo&fn=sqr_64").user__pic
+										.user__name Томас Андерсон
+										.user__desc &middot; 2 этаж
+									.user.user--listed
+										img(src="https://yt3.ggpht.com/-2f7jk6z4gIM/AAAAAAAAAAI/AAAAAAAAAAA/38an6LUMtnc/s48-c-k-no-mo-rj-c0xffffff/photo.jpg").user__pic
+										.user__name Дарт Вейдер
+										.user__desc &middot; 1 этаж
+									.user.user--listed
+										img(src="https://ae01.alicdn.com/kf/HTB1EEULKVXXXXcJXFXXq6xXFXXXQ/1-6.jpg_50x50.jpg").user__pic
+										.user__name Кларк Кент
+										.user__desc &middot; 2 этаж
+									.user.user--listed
+										img(src="https://pp.userapi.com/c410225/v410225130/5c17/wchjCgR9jug.jpg").user__pic
+										.user__name Стивен Хоккинг
+										.user__desc &middot; 1 этаж
+									.user.user--listed
+										img(src="https://pp.userapi.com/c410225/v410225130/5c17/wchjCgR9jug.jpg").user__pic
+										.user__name Стивен Хоккинг
+										.user__desc &middot; 1 этаж
 					.event__col
 						.event__row
 							.date-time-inpt
