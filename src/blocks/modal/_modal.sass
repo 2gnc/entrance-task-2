@@ -12,19 +12,23 @@
     top: 50%
     left: 50%
     transform: translate(-50%, -100%)
-    width: 445px
-    height: 228px
-    display: flex
-    flex-direction: column
-    justify-content: center
-    align-items: center
     background-color: $noeventcolor
     border-radius: 8px
     box-shadow: 0 1px 16px 0 rgba(0,44,92,0.28)
 
+  &__wrapper
+    width: 240px
+    margin: 32px 100px
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+
   &__row
     height: 55px
+    min-width: 20px
     display: flex
+    //outline: 1px solid lime
 
     &--icon
       justify-content: center
