@@ -1,0 +1,40 @@
+.modal
+  position: absolute
+  z-index: 3
+  top: 0
+  left: 0
+  width: 100vw
+  height: 100vh
+  background-color: $modalbg
+
+  &__msg
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -100%)
+    width: 445px
+    height: 228px
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    background-color: $noeventcolor
+    border-radius: 8px
+    box-shadow: 0 1px 16px 0 rgba(0,44,92,0.28)
+
+  &__row
+    height: 55px
+    display: flex
+
+    &--icon
+      justify-content: center
+      align-items: flex-start
+
+    &--text
+      max-width: 225px
+      text-align: center
+
+    &--buttons
+      min-width: 180px
+      justify-content: space-between
+      align-items: flex-end
