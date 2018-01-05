@@ -52,6 +52,7 @@
 3. ```/public/new-event.html``` 
 4. ```/public/event-states.html```
 5. ```/public/event-editor.html```
+6. ```/public/event-delete.html```
 
 * использован свой [кодстайл](http://tgnc.ru/css-%D0%BA%D0%BE%D0%B4%D1%81%D1%82%D0%B0%D0%B9%D0%BB/)
 * для построения сетки расписание использованы колонки ```.schedule__timeslot```, внутри каждой из них - ```.schedule__rowslot```. 
