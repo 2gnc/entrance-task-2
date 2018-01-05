@@ -1,5 +1,4 @@
 .recomendation
-  min-width: 420px
   height: 37px
   margin-bottom: 8px
   padding: 7px 10px 0 10px
@@ -9,8 +8,15 @@
   background-color: $bordercolor
 
   &__time
-    font-family: $fontb
+    font-family: $fontmed
 
   &__room
     margin-left: 18px
     letter-spacing: 0.2px
+    
+  &:hover
+    cursor: pointer
+
+  &--selected
+    background-color: $btnprimarycolor
+    color: $noeventcolor
