@@ -12,8 +12,7 @@ html(lang="en")
 			.wrapper.header__layout
 				+logo('#', '../img/logo.svg')
 				button.btn.btn--nomob Создать встречу
-		.schedule__wrapper
-			.timing
+		.timing
 				.wrapper.timing__layout
 					.timing__day-to-display
 						.icon.icon--arrl
@@ -55,7 +54,7 @@ html(lang="en")
 						.schedule__time(data-x="16")
 							span.schedule__hour 23
 						.schedule__time(data-x="17").schedule__time--last
-			main.schedule
+		main.schedule
 				.wrapper.schedule__layout
 					.schedule__aside
 						.rooms
@@ -185,7 +184,7 @@ html(lang="en")
 								.schedule__rowslot(data-x="5" data-y="11")
 									.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w7
 									.schedule__innerslot.schedule__innerslot--emptyw5
-								//+now('11:05', 'now--right1')
+								+now('11:05', 'now--right1')
 							.schedule__timeslot
 								.schedule__rowslot.schedule__rowslot--floor(data-x="6" data-y="1")
 								.schedule__rowslot(data-x="6" data-y="2")

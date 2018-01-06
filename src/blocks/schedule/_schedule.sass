@@ -1,7 +1,7 @@
 .schedule
 
   &__wrapper
-    overflow: hidden
+    overflow-y: hidden
 
   &__layout
     display: flex
@@ -12,19 +12,25 @@
 
   &__aside
     width: 245px
+    @media screen and (max-width: $content-width)
+      width: 181px
 
   &__time
     width: 66px
     color: $timeline
     font-family: $fontb
     text-align: right
+    @media screen and (max-width: $content-width)
+      min-width: 66px
 
     &--first
       width: 32px
       flex-grow: 0
+      @media screen and (max-width: $content-width)
+        min-width: 54px
 
     &--last
-      width: 13px
+      width: 66px
       flex-grow: 0
 
   &__hour
@@ -40,11 +46,13 @@
 
   &__timeslot
     position: relative
-    min-height: 600px
+    min-height: calc(100vh - #{$headerhigth} - #{$timinghight})
     padding-top: 20px
     border-right: 1px solid $chartborder
     flex-grow: 1
     background-color: $chartbg
+    @media screen and (max-width: $content-width)
+      min-height: calc(100vh - #{$headerhigthmob} - #{$timinghightmob} - #{$timelineheightmob})
 
     &--first
       width: 32px
