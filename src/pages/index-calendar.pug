@@ -17,8 +17,9 @@ html(lang="en")
 				.wrapper.timing__layout
 					.timing__day-to-display.timing--activated
 						.icon.icon--arrl
-						input(type="text" id="datetoday" class="timing__input timing__input--activated" value="14 дек")
-						label.timing__label(for="datetoday") · Сегодня
+						.timing__date
+							input(type="text" id="datetoday" class="timing__input timing__input--activated" value="14 дек")
+							label.timing__label(for="datetoday") · Сегодня
 						.icon.icon--arrr
 					+calendar(3)
 					.timing__timeline

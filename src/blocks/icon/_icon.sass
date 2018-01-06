@@ -3,16 +3,24 @@
   height: 24px
   border-radius: 50%
   background-repeat: no-repeat
-  background-color: #e9ecef
+  background-color: $bordercolor
   background-position: 50% 50%
   cursor: pointer
+  @media screen and (max-width: $content-width)
+    width: 32px
+    height: 32px
+    background-size: 30%
+
   &--arrr
   	background-image: url('../img/arrow.svg')
   	background-position: 60% 50%
+
   &--arrl
   	background-image: url('../img/arrow2.svg')
   	background-position: 40% 50%
+
   &--edit
     background-image: url('../img/edit.svg')
+
   &--close
     background-image: url('../img/close.svg')
