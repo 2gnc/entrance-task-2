@@ -9,51 +9,51 @@ html(lang="en")
 		link(rel="stylesheet", href="styles/style.min.css")
 	body.app
 		header.header
-			.wrapper.header__layout
-				+logo('#', '../img/logo.svg')
-				button.btn.btn--nomob Создать встречу
+				.wrapper.header__layout
+					+logo('#', '../img/logo.svg')
+					button.btn.btn--nomob Создать встречу
 		.timing
-				.wrapper.timing__layout
-					.timing__day-to-display
-						.icon.icon--arrl
-						.timing__date
-							input(type="text" id="datetoday" class="timing__input" value="14 дек")
-							label.timing__label(for="datetoday") · Сегодня
-						.icon.icon--arrr
-					.timing__timeline
-						.schedule__time(data-x="1").schedule__time--first
-							span.schedule__hour.schedule__hour--past 8:00
-						.schedule__time(data-x="2")
-							span.schedule__hour.schedule__hour--past 9
-						.schedule__time(data-x="3")
-							span.schedule__hour.schedule__hour--past 10
-						.schedule__time(data-x="4")
-							span.schedule__hour.schedule__hour--past 11
-						.schedule__time(data-x="5")
-							span.schedule__hour 12
-						.schedule__time(data-x="6")
-							span.schedule__hour 13
-						.schedule__time(data-x="7")
-							span.schedule__hour 14
-						.schedule__time(data-x="8")
-							span.schedule__hour 15
-						.schedule__time(data-x="9")
-							span.schedule__hour 16
-						.schedule__time(data-x="10")
-							span.schedule__hour 17
-						.schedule__time(data-x="11")
-							span.schedule__hour 18
-						.schedule__time(data-x="12")
-							span.schedule__hour 19
-						.schedule__time(data-x="13")
-							span.schedule__hour 20
-						.schedule__time(data-x="14")
-							span.schedule__hour 21
-						.schedule__time(data-x="15")
-							span.schedule__hour 22
-						.schedule__time(data-x="16")
-							span.schedule__hour 23
-						.schedule__time(data-x="17").schedule__time--last
+					.wrapper.timing__layout
+						.timing__day-to-display
+							.icon.icon--arrl
+							.timing__date
+								input(type="text" id="datetoday" class="timing__input" value="14 дек")
+								label.timing__label(for="datetoday") · Сегодня
+							.icon.icon--arrr
+						.timing__timeline
+							.schedule__time(data-x="1").schedule__time--first
+								span.schedule__hour.schedule__hour--past 8:00
+							.schedule__time(data-x="2")
+								span.schedule__hour.schedule__hour--past 9
+							.schedule__time(data-x="3")
+								span.schedule__hour.schedule__hour--past 10
+							.schedule__time(data-x="4")
+								span.schedule__hour.schedule__hour--past 11
+							.schedule__time(data-x="5")
+								span.schedule__hour 12
+							.schedule__time(data-x="6")
+								span.schedule__hour 13
+							.schedule__time(data-x="7")
+								span.schedule__hour 14
+							.schedule__time(data-x="8")
+								span.schedule__hour 15
+							.schedule__time(data-x="9")
+								span.schedule__hour 16
+							.schedule__time(data-x="10")
+								span.schedule__hour 17
+							.schedule__time(data-x="11")
+								span.schedule__hour 18
+							.schedule__time(data-x="12")
+								span.schedule__hour 19
+							.schedule__time(data-x="13")
+								span.schedule__hour 20
+							.schedule__time(data-x="14")
+								span.schedule__hour 21
+							.schedule__time(data-x="15")
+								span.schedule__hour 22
+							.schedule__time(data-x="16")
+								span.schedule__hour 23
+							.schedule__time(data-x="17").schedule__time--last
 		main.schedule
 				.wrapper.schedule__layout
 					.schedule__aside
