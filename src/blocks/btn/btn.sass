@@ -7,14 +7,24 @@
   font-family: $fontr
   letter-spacing: 0.4px
   line-height: 16px
+  &[disabled]
+    background-color: $bordercolor
+    color: $past
+
+    &:hover
+      background-color: $bordercolor
+
   &:hover
     background-color: $btnhover
     cursor: pointer
+
   &:active
     background-color: $btnactive
     outline: none
+
   &:focus
     outline: none
+
   &--newevent
     position: absolute
     z-index: 2
@@ -28,10 +38,13 @@
     border-radius: 2px
     font-size: 17px
     font-family: $fontb
+
   &--grey
     color: $regularcolor
     background-color: $bordercolor
+
     &:hover
       background-color: $btngreyhov
+
     &:active
       background-color: $btngreyact
