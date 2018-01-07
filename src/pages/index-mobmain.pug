@@ -64,7 +64,7 @@ html(lang="en")
 								.rooms__floor-name(data-y="1") 7 этаж
 								+room('room--disabled', 'Ржавый Фред', '', '3 - 6 человек', '2')
 								+room('', 'Прачечная', '', 'до 10 человек', '3')
-								+room('', 'Жёлтый дом', 'room__name--selected', 'до 10 человек', '4')
+								+room('', 'Жёлтый дом', '', 'до 10 человек', '4')
 								+room('room--disabled', 'Оранжевый тюльпан', '', 'до 10 человек', '5')
 							.rooms__floor
 								.rooms__floor-name(data-y="6") 6 этаж
@@ -121,6 +121,7 @@ html(lang="en")
 										.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12
 									.schedule__rowslot(data-x="2" data-y="11")
 										.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12
+								+now('8:05', 'now--right1')
 							.schedule__timeslot
 								.schedule__floorslot
 									.schedule__rowslot.schedule__rowslot--floor(data-x="3" data-y="1")
@@ -178,7 +179,6 @@ html(lang="en")
 									.schedule__rowslot(data-x="5" data-y="4")
 										.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w1
 										.schedule__innerslot.schedule__innerslot--emptyw11
-											.btn.btn--newevent +
 									.schedule__rowslot(data-x="5" data-y="5")
 										.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12
 								.schedule__floorslot
@@ -196,7 +196,6 @@ html(lang="en")
 									.schedule__rowslot(data-x="5" data-y="11")
 										.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w7
 										.schedule__innerslot.schedule__innerslot--emptyw5
-									+now('11:05', 'now--right1')
 							.schedule__timeslot
 								.schedule__floorslot
 									.schedule__rowslot.schedule__rowslot--floor(data-x="6" data-y="1")
@@ -286,19 +285,6 @@ html(lang="en")
 										.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12
 									.schedule__rowslot(data-x="9" data-y="4")
 										.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12
-											.schedule__event.schedule__event--w24
-												.tooltip
-													.icon.icon--edit.tooltip__icon
-													.tooltip__heading Рассуждения о высоком
-													.tooltip__info
-														span.tooltip__info-when 14 декабря, 15:00 - 17:00
-														span.tooltip__info-where ·
-														span.tooltip__info-where Жёлтый дом
-													.tooltip__users
-														.user
-															img.user__pic(src="https://avatars2.githubusercontent.com/u/25460115?s=40&v=4")
-															.user__name Дарт Вейдер
-														.tooltip__other-users и 12 участников
 									.schedule__rowslot(data-x="9" data-y="5")
 										.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12
 								.schedule__floorslot
