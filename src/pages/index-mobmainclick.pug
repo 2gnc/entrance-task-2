@@ -1,0 +1,522 @@
+include helpers/_mixins
+
+<!DOCTYPE html>
+html(lang="en")
+	head
+		meta(charset="UTF-8")
+		meta(name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no")
+		title Яндекс Переговорки: Главная
+		link(rel="stylesheet", href="styles/style.min.css")
+	body.app
+		.app__wrapper
+			header.header
+				.wrapper.header__layout
+					+logo('#', '../img/logo.svg')
+					button.btn.btn--nomob Создать встречу
+			.timing
+				.wrapper.timing__layout
+					.timing__dayline
+						.timing__day-to-display
+							.icon.icon--arrl
+							.timing__date
+								input(type="text" id="datetoday" class="timing__input" value="14 дек")
+								label.timing__label(for="datetoday") · Сегодня
+							.icon.icon--arrr
+					.timing__timeline
+						.schedule__time(data-x="1").schedule__time--first
+							span.schedule__hour.schedule__hour--past 8:00
+						.schedule__time(data-x="2")
+							span.schedule__hour 9
+						.schedule__time(data-x="3")
+							span.schedule__hour 10
+						.schedule__time(data-x="4")
+							span.schedule__hour 11
+						.schedule__time(data-x="5")
+							span.schedule__hour 12
+						.schedule__time(data-x="6")
+							span.schedule__hour 13
+						.schedule__time(data-x="7")
+							span.schedule__hour 14
+						.schedule__time(data-x="8")
+							span.schedule__hour 15
+						.schedule__time(data-x="9")
+							span.schedule__hour 16
+						.schedule__time(data-x="10")
+							span.schedule__hour 17
+						.schedule__time(data-x="11")
+							span.schedule__hour 18
+						.schedule__time(data-x="12")
+							span.schedule__hour 19
+						.schedule__time(data-x="13")
+							span.schedule__hour 20
+						.schedule__time(data-x="14")
+							span.schedule__hour 21
+						.schedule__time(data-x="15")
+							span.schedule__hour 22
+						.schedule__time(data-x="16")
+							span.schedule__hour 23
+						.schedule__time(data-x="17").schedule__time--last
+			main.schedule
+				.wrapper.schedule__layout
+					.schedule__aside
+						.rooms
+							.rooms__floor
+								.rooms__floor-name(data-y="1") 7 этаж
+								+room('room--disabled', 'Ржавый Фред', '', '3 - 6 человек', '2')
+								+room('', 'Прачечная', '', 'до 10 человек', '3')
+								+room('', 'Жёлтый дом', '', 'до 10 человек', '4')
+								+room('room--disabled', 'Оранжевый тюльпан', '', 'до 10 человек', '5')
+							.rooms__floor
+								.rooms__floor-name(data-y="6") 6 этаж
+								+room('', 'Джокер', '', '3 - 6 человек', '7')
+								+room('', 'Мариванна', '', '3 - 6 человек', '8')
+								+room('', 'Тонкий Боб', '', '3 - 6 человек', '9')
+								+room('', 'Черная вдова', '', '3 - 6 человек', '10')
+								+room('', 'Белорусский ликер', '', '3 - 6 человек', '11')
+					.schedule__day
+						.schedule__chart
+							.schedule__timeslot.schedule__timeslot--first
+								.schedule__floorslot
+									.schedule__rowslot.schedule__rowslot--floor(data-x="1" data-y="1")
+									.schedule__rowslot(data-x="1" data-y="2")
+										.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w6
+										.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w6r
+											.schedule__event.schedule__event--w18f
+												.tooltip
+													.icon.icon--edit.tooltip__icon
+													.tooltip__heading Рассуждения о высоком
+													.tooltip__info
+														span.tooltip__info-when 14 декабря, 15:00 - 17:00
+														span.tooltip__info-where ·
+														span.tooltip__info-where Жёлтый дом
+													.tooltip__users
+														.user
+															img.user__pic(src="https://avatars2.githubusercontent.com/u/25460115?s=40&v=4")
+															.user__name Дарт Вейдер
+														.tooltip__other-users и 12 участников
+									.schedule__rowslot(data-x="1" data-y="3")
+										.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12
+									.schedule__rowslot(data-x="1" data-y="4")
+										.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12
+									.schedule__rowslot(data-x="1" data-y="5")
+										.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12
+								.schedule__floorslot
+									.schedule__rowslot.schedule__rowslot--floor(data-x="1" data-y="6")
+									.schedule__rowslot(data-x="1" data-y="7")
+										.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12
+									.schedule__rowslot(data-x="1" data-y="8")
+										.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12
+									.schedule__rowslot(data-x="1" data-y="9")
+										.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12
+									.schedule__rowslot(data-x="1" data-y="10")
+										.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12
+									.schedule__rowslot(data-x="1" data-y="11")
+										.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12
+							.schedule__timeslot
+								.schedule__floorslot
+									.schedule__rowslot.schedule__rowslot--floor(data-x="2" data-y="1")
+									.schedule__rowslot(data-x="2" data-y="2")
+										.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12
+									.schedule__rowslot(data-x="2" data-y="3")
+										.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12
+									.schedule__rowslot(data-x="2" data-y="4")
+										.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12
+									.schedule__rowslot(data-x="2" data-y="5")
+										.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12
+								.schedule__floorslot
+									.schedule__rowslot.schedule__rowslot--floor(data-x="2" data-y="6")
+									.schedule__rowslot(data-x="2" data-y="7")
+										.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12
+									.schedule__rowslot(data-x="2" data-y="8")
+										.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12
+									.schedule__rowslot(data-x="2" data-y="9")
+										.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12
+									.schedule__rowslot(data-x="2" data-y="10")
+										.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12
+									.schedule__rowslot(data-x="2" data-y="11")
+										.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12
+								+now('8:05', 'now--right1')
+							.schedule__timeslot
+								.schedule__floorslot
+									.schedule__rowslot.schedule__rowslot--floor(data-x="3" data-y="1")
+									.schedule__rowslot(data-x="3" data-y="2")
+										.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12
+									.schedule__rowslot(data-x="3" data-y="3")
+										.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12
+									.schedule__rowslot(data-x="3" data-y="4")
+										.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12
+									.schedule__rowslot(data-x="3" data-y="5")
+										.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12
+								.schedule__floorslot
+									.schedule__rowslot.schedule__rowslot--floor(data-x="3" data-y="6")
+									.schedule__rowslot(data-x="3" data-y="7")
+										.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12
+									.schedule__rowslot(data-x="3" data-y="8")
+										.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12
+									.schedule__rowslot(data-x="3" data-y="9")
+										.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12
+									.schedule__rowslot(data-x="3" data-y="10")
+										.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12
+									.schedule__rowslot(data-x="3" data-y="11")
+										.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12
+							.schedule__timeslot
+								.schedule__floorslot
+									.schedule__rowslot.schedule__rowslot--floor(data-x="4" data-y="1")
+									.schedule__rowslot(data-x="4" data-y="2")
+										.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12
+									.schedule__rowslot(data-x="4" data-y="3")
+										.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12
+									.schedule__rowslot(data-x="4" data-y="4")
+										.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12
+									.schedule__rowslot(data-x="4" data-y="5")
+										.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12
+								.schedule__floorslot
+									.schedule__rowslot.schedule__rowslot--floor(data-x="4" data-y="6")
+									.schedule__rowslot(data-x="4" data-y="7")
+										.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12
+									.schedule__rowslot(data-x="4" data-y="8")
+										.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12
+									.schedule__rowslot(data-x="4" data-y="9")
+										.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12
+									.schedule__rowslot(data-x="4" data-y="10")
+										.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12
+									.schedule__rowslot(data-x="4" data-y="11")
+										.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12
+							.schedule__timeslot
+								.schedule__floorslot
+									.schedule__rowslot.schedule__rowslot--floor(data-x="5" data-y="1")
+									.schedule__rowslot(data-x="5" data-y="2")
+										.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12
+									.schedule__rowslot(data-x="5" data-y="3")
+										.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w1
+										.schedule__innerslot.schedule__innerslot--emptyw11
+									.schedule__rowslot(data-x="5" data-y="4")
+										.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w1
+										.schedule__innerslot.schedule__innerslot--emptyw11
+									.schedule__rowslot(data-x="5" data-y="5")
+										.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12
+								.schedule__floorslot
+									.schedule__rowslot.schedule__rowslot--floor(data-x="5" data-y="6")
+									.schedule__rowslot(data-x="5" data-y="7")
+										.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w1
+										.schedule__innerslot.schedule__innerslot--emptyw11
+									.schedule__rowslot(data-x="5" data-y="8")
+										.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12
+									.schedule__rowslot(data-x="5" data-y="9")
+										.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12(data-eventid="9")
+									.schedule__rowslot(data-x="5" data-y="10")
+										.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w9
+										.schedule__innerslot.schedule__innerslot--emptyw3
+									.schedule__rowslot(data-x="5" data-y="11")
+										.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w7
+										.schedule__innerslot.schedule__innerslot--emptyw5
+							.schedule__timeslot
+								.schedule__floorslot
+									.schedule__rowslot.schedule__rowslot--floor(data-x="6" data-y="1")
+									.schedule__rowslot(data-x="6" data-y="2")
+										.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12
+									.schedule__rowslot(data-x="6" data-y="3")
+										.schedule__innerslot.schedule__innerslot--emptyw12
+									.schedule__rowslot(data-x="6" data-y="4")
+										.schedule__innerslot.schedule__innerslot--emptyw12
+									.schedule__rowslot(data-x="6" data-y="5")
+										.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12
+								.schedule__floorslot
+									.schedule__rowslot.schedule__rowslot--floor(data-x="6" data-y="6")
+									.schedule__rowslot(data-x="6" data-y="7")
+										.schedule__innerslot.schedule__innerslot--emptyw11
+										.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w1r(data-eventid="1")
+									.schedule__rowslot(data-x="6" data-y="8")
+										.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12(data-eventid="5")
+									.schedule__rowslot(data-x="6" data-y="9")
+										.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w4(data-eventid="9")
+										.schedule__innerslot.schedule__innerslot--emptyw8
+									.schedule__rowslot(data-x="6" data-y="10")
+										.schedule__innerslot.schedule__innerslot--emptyw12
+									.schedule__rowslot(data-x="6" data-y="11")
+										.schedule__innerslot.schedule__innerslot--emptyw9
+										.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w3r
+							.schedule__timeslot
+								.schedule__floorslot
+									.schedule__rowslot.schedule__rowslot--floor(data-x="7" data-y="1")
+									.schedule__rowslot(data-x="7" data-y="2")
+										.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12
+									.schedule__rowslot(data-x="7" data-y="3")
+										.schedule__innerslot.schedule__innerslot--emptyw12
+									.schedule__rowslot(data-x="7" data-y="4")
+										.schedule__innerslot.schedule__innerslot--emptyw10
+										.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w2r
+									.schedule__rowslot(data-x="7" data-y="5")
+										.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12
+								.schedule__floorslot
+									.schedule__rowslot.schedule__rowslot--floor(data-x="7" data-y="6")
+									.schedule__rowslot(data-x="7" data-y="7")
+										.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w7(data-eventid="1")
+										.schedule__innerslot.schedule__innerslot--emptyw5
+									.schedule__rowslot(data-x="7" data-y="8")
+										.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w1(data-eventid="5")
+										.schedule__innerslot.schedule__innerslot--emptyw11
+									.schedule__rowslot(data-x="7" data-y="9")
+										.schedule__innerslot.schedule__innerslot--emptyw7
+										.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w5r(data-eventid="10")
+									.schedule__rowslot(data-x="7" data-y="10")
+										.schedule__innerslot.schedule__innerslot--emptyw4
+										.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w3
+										.schedule__innerslot.schedule__innerslot--emptyw5
+									.schedule__rowslot(data-x="7" data-y="11")
+										.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12
+							.schedule__timeslot
+								.schedule__floorslot
+									.schedule__rowslot.schedule__rowslot--floor(data-x="8" data-y="1")
+									.schedule__rowslot(data-x="8" data-y="2")
+										.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12
+									.schedule__rowslot(data-x="8" data-y="3")
+										.schedule__innerslot.schedule__innerslot--emptyw1
+										.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w11r
+									.schedule__rowslot(data-x="8" data-y="4")
+										.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12
+									.schedule__rowslot(data-x="8" data-y="5")
+										.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12
+								.schedule__floorslot
+									.schedule__rowslot.schedule__rowslot--floor(data-x="8" data-y="6")
+									.schedule__rowslot(data-x="8" data-y="7")
+										.schedule__innerslot.schedule__innerslot--emptyw12
+									.schedule__rowslot(data-x="8" data-y="8")
+										.schedule__innerslot.schedule__innerslot--emptyw8
+										.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w4r(data-eventid="6")
+									.schedule__rowslot(data-x="8" data-y="9")
+										.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12(data-eventid="10")
+									.schedule__rowslot(data-x="8" data-y="10")
+										.schedule__innerslot.schedule__innerslot--emptyw12
+									.schedule__rowslot(data-x="8" data-y="11")
+										.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12
+							.schedule__timeslot
+								.schedule__floorslot
+									.schedule__rowslot.schedule__rowslot--floor(data-x="9" data-y="1")
+									.schedule__rowslot(data-x="9" data-y="2")
+										.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12
+									.schedule__rowslot(data-x="9" data-y="3")
+										.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12
+									.schedule__rowslot(data-x="9" data-y="4")
+										.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12
+									.schedule__rowslot(data-x="9" data-y="5")
+										.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12
+								.schedule__floorslot
+									.schedule__rowslot.schedule__rowslot--floor(data-x="9" data-y="6")
+									.schedule__rowslot(data-x="9" data-y="7")
+										.schedule__innerslot.schedule__innerslot--emptyw4
+										.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w8r(data-eventid="2")
+									.schedule__rowslot(data-x="9" data-y="8")
+										.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12(data-eventid="6")
+									.schedule__rowslot(data-x="9" data-y="9")
+										.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12(data-eventid="10")
+									.schedule__rowslot(data-x="9" data-y="10")
+										.schedule__innerslot.schedule__innerslot--emptyw4
+										.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w8r
+									.schedule__rowslot(data-x="9" data-y="11")
+										.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12
+							.schedule__timeslot
+								.schedule__floorslot
+									.schedule__rowslot.schedule__rowslot--floor(data-x="10" data-y="1")
+									.schedule__rowslot(data-x="10" data-y="2")
+										.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12
+									.schedule__rowslot(data-x="10" data-y="3")
+										.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12
+									.schedule__rowslot(data-x="10" data-y="4")
+										.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12
+									.schedule__rowslot(data-x="10" data-y="5")
+										.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12
+								.schedule__floorslot
+									.schedule__rowslot.schedule__rowslot--floor(data-x="10" data-y="6")
+									.schedule__rowslot(data-x="10" data-y="7")
+										.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w11(data-eventid="2")
+										.schedule__innerslot.schedule__innerslot--emptyw1
+									.schedule__rowslot(data-x="10" data-y="8")
+										.schedule__innerslot.schedule__innerslot--emptyw11
+										.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w1r(data-eventid="7")
+									.schedule__rowslot(data-x="10" data-y="9")
+										.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w7(data-eventid="10")
+										.schedule__innerslot.schedule__innerslot--emptyw5
+									.schedule__rowslot(data-x="10" data-y="10")
+										.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w11
+										.schedule__innerslot.schedule__innerslot--emptyw1
+									.schedule__rowslot(data-x="10" data-y="11")
+										.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w11
+										.schedule__innerslot.schedule__innerslot--emptyw1
+							.schedule__timeslot
+								.schedule__floorslot
+									.schedule__rowslot.schedule__rowslot--floor(data-x="11" data-y="1")
+									.schedule__rowslot(data-x="11" data-y="2")
+										.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12
+									.schedule__rowslot(data-x="11" data-y="3")
+										.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12
+									.schedule__rowslot(data-x="11" data-y="4")
+										.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12
+									.schedule__rowslot(data-x="11" data-y="5")
+										.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12
+								.schedule__floorslot
+									.schedule__rowslot.schedule__rowslot--floor(data-x="11" data-y="6")
+									.schedule__rowslot(data-x="11" data-y="7")
+										.schedule__innerslot.schedule__innerslot--emptyw2
+										.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w10r(data-eventid="3")
+									.schedule__rowslot(data-x="11" data-y="8")
+										.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w10(data-eventid="7")
+										.schedule__innerslot.schedule__innerslot--emptyw2
+									.schedule__rowslot(data-x="11" data-y="9")
+										.schedule__innerslot.schedule__innerslot--emptyw4
+										.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w8r(data-eventid="11")
+									.schedule__rowslot(data-x="11" data-y="10")
+										.schedule__innerslot.schedule__innerslot--emptyw2
+										.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w10r
+									.schedule__rowslot(data-x="11" data-y="11")
+										.schedule__innerslot.schedule__innerslot--emptyw2
+										.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w4
+										.schedule__innerslot.schedule__innerslot--emptyw3
+										.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w3r
+							.schedule__timeslot
+								.schedule__floorslot
+									.schedule__rowslot.schedule__rowslot--floor(data-x="12" data-y="1")
+									.schedule__rowslot(data-x="12" data-y="2")
+										.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12
+									.schedule__rowslot(data-x="12" data-y="3")
+										.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12
+									.schedule__rowslot(data-x="12" data-y="4")
+										.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12
+									.schedule__rowslot(data-x="12" data-y="5")
+										.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12
+								.schedule__floorslot
+									.schedule__rowslot.schedule__rowslot--floor(data-x="12" data-y="6")
+									.schedule__rowslot(data-x="12" data-y="7")
+										.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w3(data-eventid="3")
+										.schedule__innerslot.schedule__innerslot--emptyw9
+									.schedule__rowslot(data-x="12" data-y="8")
+										.schedule__innerslot.schedule__innerslot--emptyw9
+										.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w3r(data-eventid="8")
+									.schedule__rowslot(data-x="12" data-y="9")
+										.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w9(data-eventid="11")
+										.schedule__innerslot.schedule__innerslot--emptyw3
+									.schedule__rowslot(data-x="12" data-y="10")
+										.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w9
+										.schedule__innerslot.schedule__innerslot--emptyw3
+									.schedule__rowslot(data-x="12" data-y="11")
+										.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w1
+										.schedule__innerslot.schedule__innerslot--emptyw6
+										.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w5r
+							.schedule__timeslot
+								.schedule__floorslot
+									.schedule__rowslot.schedule__rowslot--floor(data-x="13" data-y="1")
+									.schedule__rowslot(data-x="13" data-y="2")
+										.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12
+									.schedule__rowslot(data-x="13" data-y="3")
+										.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12
+									.schedule__rowslot(data-x="13" data-y="4")
+										.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12
+									.schedule__rowslot(data-x="13" data-y="5")
+										.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12
+								.schedule__floorslot
+									.schedule__rowslot.schedule__rowslot--floor(data-x="13" data-y="6")
+									.schedule__rowslot(data-x="13" data-y="7")
+										.schedule__innerslot.schedule__innerslot--emptyw10
+										.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w2r(data-eventid="4")
+									.schedule__rowslot(data-x="13" data-y="8")
+										.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12(data-eventid="8")
+									.schedule__rowslot(data-x="13" data-y="9")
+										.schedule__innerslot.schedule__innerslot--emptyw12
+									.schedule__rowslot(data-x="13" data-y="10")
+										.schedule__innerslot.schedule__innerslot--emptyw7
+										.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w5r
+									.schedule__rowslot(data-x="13" data-y="11")
+										.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12
+							.schedule__timeslot
+								.schedule__floorslot
+									.schedule__rowslot.schedule__rowslot--floor(data-x="14" data-y="1")
+									.schedule__rowslot(data-x="14" data-y="2")
+										.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12
+									.schedule__rowslot(data-x="14" data-y="3")
+										.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12
+									.schedule__rowslot(data-x="14" data-y="4")
+										.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12
+									.schedule__rowslot(data-x="14" data-y="5")
+										.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12
+								.schedule__floorslot
+									.schedule__rowslot.schedule__rowslot--floor(data-x="14" data-y="6")
+									.schedule__rowslot(data-x="14" data-y="7")
+										.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12(data-eventid="4")
+									.schedule__rowslot(data-x="14" data-y="8")
+										.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12(data-eventid="8")
+									.schedule__rowslot(data-x="14" data-y="9")
+										.schedule__innerslot.schedule__innerslot--emptyw12
+									.schedule__rowslot(data-x="14" data-y="10")
+										.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12
+									.schedule__rowslot(data-x="14" data-y="11")
+										.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12
+							.schedule__timeslot
+								.schedule__floorslot
+									.schedule__rowslot.schedule__rowslot--floor(data-x="15" data-y="1")
+									.schedule__rowslot(data-x="15" data-y="2")
+										.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12
+									.schedule__rowslot(data-x="15" data-y="3")
+										.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12
+									.schedule__rowslot(data-x="15" data-y="4")
+										.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12
+									.schedule__rowslot(data-x="15" data-y="5")
+										.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12
+								.schedule__floorslot
+									.schedule__rowslot.schedule__rowslot--floor(data-x="15" data-y="6")
+									.schedule__rowslot(data-x="15" data-y="7")
+										.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12(data-eventid="4")
+									.schedule__rowslot(data-x="15" data-y="8")
+										.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12(data-eventid="8")
+									.schedule__rowslot(data-x="15" data-y="9")
+										.schedule__innerslot.schedule__innerslot--emptyw9
+										.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w3r(data-eventid="12")
+									.schedule__rowslot(data-x="15" data-y="10")
+										.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12
+									.schedule__rowslot(data-x="15" data-y="11")
+										.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12
+							.schedule__timeslot
+								.schedule__floorslot
+									.schedule__rowslot.schedule__rowslot--floor(data-x="16" data-y="1")
+									.schedule__rowslot(data-x="16" data-y="2")
+										.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12
+									.schedule__rowslot(data-x="16" data-y="3")
+										.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12
+									.schedule__rowslot(data-x="16" data-y="4")
+										.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12
+									.schedule__rowslot(data-x="16" data-y="5")
+										.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12
+								.schedule__floorslot
+									.schedule__rowslot.schedule__rowslot--floor(data-x="16" data-y="6")
+									.schedule__rowslot(data-x="16" data-y="7")
+										.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12(data-eventid="4")
+									.schedule__rowslot(data-x="16" data-y="8")
+										.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12(data-eventid="8")
+									.schedule__rowslot(data-x="16" data-y="9")
+										.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12(data-eventid="12")
+									.schedule__rowslot(data-x="16" data-y="10")
+										.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12
+									.schedule__rowslot(data-x="16" data-y="11")
+										.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--w12
+							.schedule__timeslot.schedule__timeslot--last
+								.schedule__floorslot
+									.schedule__rowslot.schedule__rowslot--floor(data-x="17" data-y="1")
+									.schedule__rowslot(data-x="17" data-y="2")
+										.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--last
+									.schedule__rowslot(data-x="17" data-y="3")
+										.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--last
+									.schedule__rowslot(data-x="17" data-y="4")
+										.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--last
+									.schedule__rowslot(data-x="17" data-y="5")
+										.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--last
+								.schedule__floorslot
+									.schedule__rowslot.schedule__rowslot--floor(data-x="3" data-y="6")
+									.schedule__rowslot(data-x="17" data-y="7")
+										.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--last
+									.schedule__rowslot(data-x="17" data-y="8")
+										.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--last
+									.schedule__rowslot(data-x="17" data-y="9")
+										.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--last
+									.schedule__rowslot(data-x="17" data-y="10")
+										.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--last
+									.schedule__rowslot(data-x="17" data-y="11")
+										.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--last
