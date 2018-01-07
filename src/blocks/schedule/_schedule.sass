@@ -51,6 +51,7 @@
     min-height: calc(100vh - #{$headerhigth} - #{$timinghight})
     padding-top: 20px
     border-right: 1px solid $chartborder
+    flex-grow: 1
     background-color: $chartbg
     @media screen and (max-width: $content-width)
       min-width: 66px
@@ -59,6 +60,7 @@
     &--first
       width: 32px
       border-left: 1px solid $chartborder
+      flex-grow: 0
       @media screen and (max-width: $content-width)
         min-width: 54px
         border-left: none
