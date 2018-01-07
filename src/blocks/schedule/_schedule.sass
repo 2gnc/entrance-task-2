@@ -53,26 +53,43 @@
     flex-grow: 1
     background-color: $chartbg
     @media screen and (max-width: $content-width)
+      min-width: 66px
       min-height: 100%
       height: calc(100vh - #{$headerhigthmob} - #{$timinghightmob} - #{$timelineheightmob})
+      padding-top: 0
 
     &--first
       width: 32px
       border-left: 1px solid $chartborder
       flex-grow: 0
+      @media screen and (max-width: $content-width)
+        min-width: 54px
+        border-left: none
+        border-right: 1px solid $chartborder
 
     &--last
       width: 13px
       border-right: none
       flex-grow: 0
+      @media screen and (max-width: $content-width)
+        min-width: 55px
+
+  &__floorslot
+    @media screen and (max-width: $content-width)
+      outline: 1px solid red
 
   &__rowslot
     height: 27px
     margin: 10px 0 25px 0
+    @media screen and (max-width: $content-width)
+      height: 58px
+      margin: 2px 0 0 0
 
     &--floor
       height: 17px
       margin: 0
+      @media screen and (max-width: $content-width)
+        height: 35px
 
   &__innerslot
     position: relative
