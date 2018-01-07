@@ -3,8 +3,10 @@
   height: $headerhigth
   border-bottom: 1px solid $bordercolor
   @media screen and (max-width: $content-width)
+    position: fixed
+    z-index: 3
+    background-color: $noeventcolor
     height: $headerhigthmob
-    border-bottom: none
 
   &__layout
     display: flex

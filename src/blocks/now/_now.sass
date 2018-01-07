@@ -19,7 +19,7 @@
     width: 1px
     background-color: $btnprimarycolor
     @media screen and (max-width: $content-width)
-      min-height: 100vh
+      min-height: calc( 100vh + #{$headerhigthmob} + #{$timinghightmob} + #{$timelineheightmob} )
 
 @for $i from 1 through 12
   @if $i != 12

@@ -12,7 +12,6 @@
     @media screen and (max-width: $content-width)
       padding-left: 0
       flex-direction: column
-      border-top: 1px solid $bordercolor
 
   &__day-to-display
     width: 245px
@@ -60,6 +59,15 @@
     font-size: 15px
     line-height: 24px
 
+  &__dayline
+    @media screen and (max-width: $content-width)
+      position: fixed
+      top: $headerhigthmob
+      z-index: 3
+      width: 100%
+      height: $timinghightmob
+      background-color: $noeventcolor
+
   &__timeline
     height: 45px
     padding-left: 24px
@@ -68,6 +76,7 @@
     font-size: 11px
     @media screen and (max-width: $content-width)
       height: $timelineheightmob
+      margin-top: calc( #{$timinghightmob} + #{$headerhigthmob} )
       padding-left: 181px
       border-top: 1px solid $bordercolor
 
