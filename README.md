@@ -54,6 +54,7 @@
 5. ```/public/event-editor.html```
 6. ```/public/event-delete.html```
 7. ```/public/event-saved.html```
+8. ```/public/index-mobmain.html``` - то же, что и index.html, но другое текущее время, нет тултипа и кнопки создания эвента.
 
 * использован свой [кодстайл](http://tgnc.ru/css-%D0%BA%D0%BE%D0%B4%D1%81%D1%82%D0%B0%D0%B9%D0%BB/)
 * для построения сетки расписание использованы колонки ```.schedule__timeslot```, внутри каждой из них - ```.schedule__rowslot```. 
