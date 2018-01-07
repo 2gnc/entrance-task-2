@@ -10,6 +10,11 @@
   background-color: $noeventcolor
   transform: translate(-50%)
   cursor: auto
+  @media screen and (max-width: $content-width)
+    position: absolute
+    left: -10px
+    z-index: 50
+    width: 360px
 
   &::before
     content: ''
@@ -19,29 +24,36 @@
     border: 8px solid transparent
     border-bottom: 10px solid $noeventcolor
     transform: translate(-50%)
+    //@media screen and (max-width: $content-width)
 
   &__heading
     line-height: 24px
     font-family: $fontb
     font-size: 15px
+    //@media screen and (max-width: $content-width)
 
   &__icon
     position: absolute
     top: 8px
     right: 8px
+    //@media screen and (max-width: $content-width)
 
   &__info
     margin-top: 3px
     line-height: 17px
     font-family: $fontr
+    //@media screen and (max-width: $content-width)
 
   &__info-where
     margin-left: 8px
+    //@media screen and (max-width: $content-width)
 
   &__users
     display: flex
     padding-top: 14px
+    //@media screen and (max-width: $content-width)
 
   &__other-users
     line-height: 24px
     color: $past
+    //@media screen and (max-width: $content-width)
