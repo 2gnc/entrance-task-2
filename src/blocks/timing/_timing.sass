@@ -1,6 +1,10 @@
 .timing
   width: 100%
   border-bottom: 1px solid $bordercolor
+  @media screen and (max-width: $content-width)
+    display: flex
+    flex-direction: column
+    align-items: flex-start
 
   &__layout
     display: flex
@@ -8,6 +12,7 @@
     @media screen and (max-width: $content-width)
       padding-left: 0
       flex-direction: column
+      border-top: 1px solid $bordercolor
 
   &__day-to-display
     width: 245px
