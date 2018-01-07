@@ -3,6 +3,9 @@
   top: -33px
   z-index: 2
   width: 1px
+  @media screen and (max-width: $content-width)
+    top: -27px
+
   &__time
     position: absolute
     z-index: 100
@@ -14,12 +17,13 @@
     line-height: 20px
     text-align: center
     font-size: 11px
+
   &__line
     min-height: calc(100vh - #{$headerhigth} -  (#{$timinghight}/2) + 10px )
     width: 1px
     background-color: $btnprimarycolor
     @media screen and (max-width: $content-width)
-      min-height: calc( 100vh + #{$headerhigthmob} + #{$timinghightmob} + #{$timelineheightmob} )
+      min-height: calc( 100vh + #{$headerhigthmob} + #{$timinghightmob} + #{$timelineheightmob} -6px )
 
 @for $i from 1 through 12
   @if $i != 12
