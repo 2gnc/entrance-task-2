@@ -67,11 +67,11 @@ html(lang="en")
 									input(type="text" value="14 декабря, 2017" id="eventDate").inpt.date-time-inpt__date-inpt
 								.date-time-inpt__time
 									.label Начало
-									input(type="text" value="16:00").inpt.date-time-inpt__time-inpt
+									input(type="text" value="16:00" pattern="[0-9]{2}:[0-9]{2}" placeholder="чч:мм").inpt.date-time-inpt__time-inpt
 									.date-time-inpt__separator &ndash;
 								.date-time-inpt__time
 									.label Конец
-									input(type="text" value="16:30").inpt.date-time-inpt__time-inpt
+									input(type="text" value="16:30" pattern="[0-9]{2}:[0-9]{2}" placeholder="чч:мм").inpt.date-time-inpt__time-inpt
 						.event__recomendations
 							.event__row
 								.label Ваша переговорка
