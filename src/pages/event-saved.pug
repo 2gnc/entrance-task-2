@@ -18,12 +18,13 @@ html(lang="en")
 					button.btn.btn--nomob Создать встречу
 			.timing
 				.wrapper.timing__layout
-					.timing__day-to-display
-						.icon.icon--arrl
-						.timing__date
-							input(type="text" id="datetoday" class="timing__input" value="14 дек")
-							label.timing__label(for="datetoday") · Сегодня
-						.icon.icon--arrr
+					.timing__dayline
+						.timing__day-to-display
+							.icon.icon--arrl
+							.timing__date
+								input(type="text" id="datetoday" class="timing__input" value="14 дек")
+								label.timing__label(for="datetoday") · Сегодня
+							.icon.icon--arrr
 					.timing__timeline
 						.schedule__time(data-x="1").schedule__time--first
 							span.schedule__hour.schedule__hour--past 8:00
