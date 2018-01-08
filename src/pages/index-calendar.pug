@@ -17,8 +17,8 @@ html(lang="en")
 					+logo('#', '../img/logo.svg')
 					button.btn.btn--nomob Создать встречу
 			.timing
-				.timing__dayline
-					.wrapper.timing__layout
+				.wrapper.timing__layout
+					.timing__dayline
 						.timing__day-to-display.timing--activated
 							.icon.icon--arrl
 							.timing__date
@@ -26,7 +26,7 @@ html(lang="en")
 								label.timing__label(for="datetoday") · Сегодня
 							.icon.icon--arrr
 						+calendar(3)
-						.timing__timeline
+					.timing__timeline
 							.schedule__time(data-x="1").schedule__time--first
 								span.schedule__hour.schedule__hour--past 8:00
 							.schedule__time(data-x="2")
@@ -61,8 +61,8 @@ html(lang="en")
 								span.schedule__hour 23
 							.schedule__time(data-x="17").schedule__time--last
 			main.schedule
-					.wrapper.schedule__layout
-						.schedule__aside
+				.wrapper.schedule__layout
+					.schedule__aside
 							.rooms
 								.rooms__floor
 									.rooms__floor-name(data-y="1") 7 этаж
@@ -77,7 +77,7 @@ html(lang="en")
 									+room('', 'Тонкий Боб', '', '3 - 6 человек', '9')
 									+room('', 'Черная вдова', '', '3 - 6 человек', '10')
 									+room('', 'Белорусский ликер', '', '3 - 6 человек', '11')
-						.schedule__day
+					.schedule__day
 							.schedule__chart
 								.schedule__timeslot.schedule__timeslot--first
 									.schedule__floorslot
