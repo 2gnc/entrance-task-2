@@ -1,1 +1,1 @@
-"use strict";$(function(){$(".autocomplete").niceScroll("div.autocomplete__wrapper",{cursorwidth:"10px",cursorcolor:"#d5dfe9",cursorborderradius:"100px",emulatetouch:!0,autohidemode:!1,railpadding:{top:0,right:3,left:0,bottom:0},cursorfixedheight:40})});
+"use strict";$(function(){$(".autocomplete").niceScroll("div.autocomplete__wrapper",{cursorwidth:"10px",cursorcolor:"#d5dfe9",cursorborderradius:"100px",emulatetouch:!0,autohidemode:!1,railpadding:{top:0,right:3,left:0,bottom:0},cursorfixedheight:40})}),console.log("test");
