@@ -19,10 +19,10 @@ html(lang="en")
 			.timing
 				.wrapper.timing__layout
 					.timing__dayline
-						.timing__day-to-display.timing--activated
+						.timing__day-to-display
 							.icon.icon--arrl
 							.timing__date
-								input(type="text" id="datetoday" class="timing__input timing__input--activated" value="14 дек")
+								input(type="text" id="datetoday" class="timing__input" value="14 дек")
 								label.timing__label(for="datetoday") · Сегодня
 							.icon.icon--arrr
 						+calendar(1)
@@ -61,7 +61,7 @@ html(lang="en")
 								span.schedule__hour 23
 							.schedule__time(data-x="17").schedule__time--last
 			main.schedule
-					.wrapper.schedule__layout
+				.wrapper.schedule__layout
 						.schedule__aside
 							.rooms
 								.rooms__floor
@@ -511,3 +511,4 @@ html(lang="en")
 											.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--last
 										.schedule__rowslot(data-x="17" data-y="11")
 											.schedule__innerslot.schedule__innerslot--busy.schedule__innerslot--last
+				.modal
