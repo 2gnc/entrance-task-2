@@ -20,6 +20,19 @@
     font-family: $fontmed
     letter-spacing: 0.2px
 
+    &--swiped
+      @media screen and (max-width: $content-width)
+        position: fixed
+        z-index: 3
+        font-size: 11px
+        background-color: $noeventcolor
+        padding: 0 8px
+        transform: translateY(-80%)
+        box-shadow: 0 1px 8px 0 rgba(0,44,92,0.28)
+        border-radius: 4px
+        line-height: 24px
+        letter-spacing: 0.4px
+
     &--selected
       font-family: $fontb
       color: $rommhover
