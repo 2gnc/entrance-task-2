@@ -9,7 +9,6 @@
 	
 	function switcher () {
 		
-		console.log( 'ff' );
 		
 		if ( window.pageXOffset > aside && !check ) {
 			check = true;
