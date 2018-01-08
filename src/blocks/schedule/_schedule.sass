@@ -108,6 +108,7 @@
     &--selected
     	background-color: $eventhovercolor
     	border-right: 1px solid $eventhovercolor
+      
   &__event
     position: relative
     z-index: 2
@@ -117,10 +118,10 @@
     &--w24
       width: calc(2px + 132px)
 
-    &--w18f
+    &--w19f
       width: calc(2px + 15px + 66px)
       @media screen and (max-width: $content-width)
-        width: calc(27px + 66px)
+        width: calc(27px + 66px + 11px)
         z-index: 4
 
 @for $i from 1 through 12
