@@ -9,7 +9,6 @@
 	
 	function switcher () {
 		
-		
 		if ( window.pageXOffset > aside && !check ) {
 			check = true;
 			rooms.toggleClass ( 'room__name--swiped' );
