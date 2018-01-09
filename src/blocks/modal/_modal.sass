@@ -6,7 +6,12 @@
   width: 100vw
   height: 100vh
   background-color: $modalbg
-  //@media screen and (max-width: $content-width)
+  @media screen and (max-width: $content-width)
+    background-color: $modalbgmob
+
+  &--calendar
+    @media screen and (max-width: $content-width)
+      z-index: auto
 
 .modal__msg
   width: 444px
