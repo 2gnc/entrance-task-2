@@ -36,10 +36,10 @@ gulp.task( 'html', function() {
 gulp.task( 'js', function() {
 	return gulp.src( 'src/blocks/**/**.js' )
 		.pipe( concat('scripts.js') )
-		.pipe( babel({
-			presets: ['env']
-		}) )
-		.pipe( ugly() )
+		//.pipe( babel({
+		//	presets: ['env']
+		//}) )
+		//.pipe( ugly() )
 		.pipe(gulp.dest( 'public/scripts/' ))
 		.pipe(sync.reload({ stream: true }));
 } );

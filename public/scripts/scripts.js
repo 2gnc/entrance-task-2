@@ -1,1 +1,52 @@
-"use strict";$(function(){$(".autocomplete").niceScroll("div.autocomplete__wrapper",{cursorwidth:"10px",cursorcolor:"#d5dfe9",cursorborderradius:"100px",emulatetouch:!0,autohidemode:!1,railpadding:{top:0,right:3,left:0,bottom:0},cursorfixedheight:40})}),function(){var o=$(".schedule__aside")[0].clientWidth,e=$(".rooms"),s=$(".room__name"),t=$(".rooms__floor-name"),r=!1;document.addEventListener("scroll",function(){window.pageXOffset>o&&!r&&(r=!0,s.toggleClass("room__name--swiped"),e.toggleClass("rooms--swiped"),t.toggleClass("rooms__floor-name--swiped"));window.pageXOffset<=o&&r&&(r=!1,s.toggleClass("room__name--swiped"),e.toggleClass("rooms--swiped"),t.toggleClass("rooms__floor-name--swiped"),e.removeAttr("style"));window.pageXOffset>o&&e.css("left",pageXOffset)})}();
+$(function() {
+	$( '.autocomplete' ).niceScroll(
+		"div.autocomplete__wrapper",
+		{
+			cursorwidth: "10px",
+			cursorcolor:"#d5dfe9",
+			cursorborderradius: "100px",
+			emulatetouch: true,
+			autohidemode: false,
+			railpadding: {
+				top: 0,
+				right: 3,
+				left: 0	,
+				bottom: 0
+			},
+			cursorfixedheight: 40
+		}
+	);
+});
+(function (){
+	const aside = $( '.schedule__aside' )[ 0 ].clientWidth;
+	const roomsbox = $( '.rooms' );
+	const rooms = $ ( '.room__name' );
+	const floors = $( '.rooms__floor-name' );
+	let check = false;
+	
+	document.addEventListener ( 'scroll', switcher );
+	
+	function switcher () {
+		
+		if ( window.pageXOffset > aside && !check ) {
+			check = true;
+			rooms.toggleClass ( 'room__name--swiped' );
+			roomsbox.toggleClass( 'rooms--swiped' );
+			floors.toggleClass( 'rooms__floor-name--swiped' );
+		}
+		
+		if ( window.pageXOffset <= aside && check ) {
+			check = false;
+			rooms.toggleClass ( 'room__name--swiped' );
+			roomsbox.toggleClass( 'rooms--swiped' );
+			floors.toggleClass( 'rooms__floor-name--swiped' );
+			roomsbox.removeAttr( 'style' );
+		}
+		
+		if( window.pageXOffset > aside ) {
+			roomsbox.css( 'left', pageXOffset );
+		}
+		
+	}
+}());
+	
