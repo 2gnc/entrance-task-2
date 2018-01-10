@@ -11,6 +11,29 @@
       height: 8px
       background-color: $bordercolor
 
+  &__new-event-controls
+    display: none
+    @media screen and (max-width: $content-width)
+      width: 100%
+      height: 123px
+      display: flex
+      flex-direction: column
+      position: fixed
+      z-index: 3
+      bottom: 0
+
+  &__msg
+    @media screen and (max-width: $content-width)
+      height: 44px
+      padding-left: 16px
+      opacity: 0.93
+      background: rgba(0,16,33,0.80)
+      color: $noeventcolor
+      font-size: 15px
+      font-family: $fontb
+      text-align: left
+      line-height: 44px
+
   &__wrapper
     width: 880px
     min-height: 570px
@@ -18,7 +41,11 @@
     padding: 0 4px
     @media screen and (max-width: $content-width)
       width: 100%
-      padding: 43px 0 0 0 // 16px 0 16px
+      padding: 43px 0 0 0
+
+    &--newevent
+      @media screen and (max-width: $content-width)
+        margin-bottom: 123px
 
   &__heading
     margin-top: 30px
@@ -37,6 +64,9 @@
       flex-direction: column
       margin-top: 0
       margin-bottom: 20px
+    &:last-child
+      @media screen and (max-width: $content-width)
+        margin-bottom: 0
 
   &__col
     width: 48%
@@ -44,6 +74,7 @@
       width: 100%
       margin: 0 0 19px 0
       padding: 0 16px
+      position: relative
     &--recomendation
       @media screen and (max-width: $content-width)
         margin-top: 18px
@@ -60,6 +91,8 @@
     flex-wrap: wrap
     @media screen and (max-width: $content-width)
       margin-top: 11px
+      max-height: 112px
+      overflow: scroll
 
   &__block
     width: 100%
@@ -94,7 +127,8 @@
     width: 235px
     display: flex
     justify-content: space-between
-    //@media screen and (max-width: $content-width)
+    @media screen and (max-width: $content-width)
+      padding: 16px 0
 
     &--three
       width: 355px
@@ -118,3 +152,10 @@
         width: 100%
         display: flex
         flex-direction: column
+
+    &--newevent
+      width: 100%
+      flex-grow: 1
+      align-items: center
+      justify-content: space-around
+      background-color: $noeventcolor

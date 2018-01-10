@@ -1,11 +1,18 @@
 .autocomplete
-  position: absolute
-  top: -6px
   width: 420px
   max-height: 136px
   padding-left: 16px
   box-shadow: 0 1px 10px 0 rgba(0,44,92,0.28)
   border-radius: 4px
-  overflow: auto
+  overflow: scroll
+  @media screen and (max-width: $content-width)
+    width: 100%
+    min-width: 300px
+    background-color: $noeventcolor
 
-  &__wrapper
+  &__box
+    @media screen and (max-width: $content-width)
+      width: calc( 100% - 32px )
+      position: absolute
+      top: 60px
+      z-index: 5

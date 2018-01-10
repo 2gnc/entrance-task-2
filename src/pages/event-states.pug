@@ -22,63 +22,71 @@ html(lang="en")
 					.icon.icon--close.icon--nomob
 				.event__row
 					.event__col
-						label(for="eventDate").label.label--desktop Дата
-						label(for="eventDate").label.label--touch Дата и время
+						label(for="eventDate").label Тема
 						input(type="text" id="eventTheme" placeholder="О чем будете говорить?" value="").inpt.event__text-inpt
 					.event__col
 						.date-time-inpt
 							.date-time-inpt__date
-								label(for="eventDate").label Дата
+								label(for="eventDate").label.label--desktop Дата
+								label(for="eventDate").label.label--touch Дата и время
 								input(type="text" value="14 декабря, 2017" id="eventDate").inpt.date-time-inpt__date-inpt
-							.date-time-inpt__time
-								.label.label--desktop Начало
-								input(type="text" value="16:00" pattern="[0-9]{2}:[0-9]{2}" placeholder="чч:мм").inpt.date-time-inpt__time-inpt
+							.date-time-inpt__times
+								.date-time-inpt__time
+									.label.label--desktop Начало
+									input(type="text" value="16:00" pattern="[0-9]{2}:[0-9]{2}" placeholder="чч:мм").inpt.date-time-inpt__time-inpt
 								.date-time-inpt__separator &ndash;
-							.date-time-inpt__time
-								.label.label--desktop Конец
-								input(type="text" value="16:30" pattern="[0-9]{2}:[0-9]{2}" placeholder="чч:мм").inpt.date-time-inpt__time-inpt
-
+								.date-time-inpt__time
+									.label.label--desktop Конец
+									input(type="text" value="16:30" pattern="[0-9]{2}:[0-9]{2}" placeholder="чч:мм").inpt.date-time-inpt__time-inpt
+					.event__separator
 				.event__row
 					.event__col
 						label(for="eventUsersInpt").label Участники
 						input(type="text" id="eventUsersInpt" placeholder="Например, Тор Одинович" autofocus).inpt.event__text-inpt
-						.event__participants
+						.autocomplete__box
 							.autocomplete
-								.autocomplete__wrapper
-									.user.user--listed
-										img(src="https://pbs.twimg.com/profile_images/660254077947744256/tTt22r3f.png").user__pic
-										.user__name Лекс Лютер
-										.user__desc &middot; 7 этаж
-									.user.user--listed
-										img(src="https://i.mycdn.me/image?id=858985521355&ts=00000000ca0000031b&plc=WEB&tkn=*mSbbxyd2u6Q3hZMyXBNdpg-nDqo&fn=sqr_64").user__pic
-										.user__name Томас Андерсон
-										.user__desc &middot; 2 этаж
-									.user.user--listed
-										img(src="https://yt3.ggpht.com/-2f7jk6z4gIM/AAAAAAAAAAI/AAAAAAAAAAA/38an6LUMtnc/s48-c-k-no-mo-rj-c0xffffff/photo.jpg").user__pic
-										.user__name Дарт Вейдер
-										.user__desc &middot; 1 этаж
-									.user.user--listed
-										img(src="https://ae01.alicdn.com/kf/HTB1EEULKVXXXXcJXFXXq6xXFXXXQ/1-6.jpg_50x50.jpg").user__pic
-										.user__name Кларк Кент
-										.user__desc &middot; 2 этаж
-									.user.user--listed
-										img(src="https://pp.userapi.com/c410225/v410225130/5c17/wchjCgR9jug.jpg").user__pic
-										.user__name Стивен Хоккинг
-										.user__desc &middot; 1 этаж
-									.user.user--listed
-										img(src="https://pp.userapi.com/c639628/v639628963/50502/7iDvSWMIaZ0.jpg").user__pic
-										.user__name Илон Маск
-										.user__desc &middot; 1 этаж
-									.user.user--listed
-										img(src="https://vignette.wikia.nocookie.net/marvelcinematicuniverse/images/a/a2/Yondu_Profile%281%29.png").user__pic
-										.user__name Йонду Удонта
-										.user__desc &middot; 2 этаж
-					.event__col
+									.autocomplete__wrapper
+										.user.user--listed
+											img(src="https://pbs.twimg.com/profile_images/660254077947744256/tTt22r3f.png").user__pic
+											.user__name Лекс Лютер
+											.user__desc &middot; 7 этаж
+										.user.user--listed
+											img(src="https://i.mycdn.me/image?id=858985521355&ts=00000000ca0000031b&plc=WEB&tkn=*mSbbxyd2u6Q3hZMyXBNdpg-nDqo&fn=sqr_64").user__pic
+											.user__name Томас Андерсон
+											.user__desc &middot; 2 этаж
+										.user.user--listed
+											img(src="https://yt3.ggpht.com/-2f7jk6z4gIM/AAAAAAAAAAI/AAAAAAAAAAA/38an6LUMtnc/s48-c-k-no-mo-rj-c0xffffff/photo.jpg").user__pic
+											.user__name Дарт Вейдер
+											.user__desc &middot; 1 этаж
+										.user.user--listed
+											img(src="https://ae01.alicdn.com/kf/HTB1EEULKVXXXXcJXFXXq6xXFXXXQ/1-6.jpg_50x50.jpg").user__pic
+											.user__name Кларк Кент
+											.user__desc &middot; 2 этаж
+										.user.user--listed
+											img(src="https://pp.userapi.com/c410225/v410225130/5c17/wchjCgR9jug.jpg").user__pic
+											.user__name Стивен Хоккинг
+											.user__desc &middot; 1 этаж
+										.user.user--listed
+											img(src="https://pp.userapi.com/c639628/v639628963/50502/7iDvSWMIaZ0.jpg").user__pic
+											.user__name Илон Маск
+											.user__desc &middot; 1 этаж
+										.user.user--listed
+											img(src="https://vignette.wikia.nocookie.net/marvelcinematicuniverse/images/a/a2/Yondu_Profile%281%29.png").user__pic
+											.user__name Йонду Удонта
+											.user__desc &middot; 2 этаж
+					.event__participants
+					.event__separator
+					.event__col.event__col--recomendation
 						.label Ваша переговорка
 						.recomendation.recomendation--selected
 							span.recomendation__time 16:00 &ndash; 16:30
 							span.recomendation__room Готем &middot; 4 этаж
+			.event__new-event-controls
+				.event__buttons.event__buttons--newevent
+					button.btn.btn--grey(disabled) Создать встречу
+					button.btn.btn--grey Отмена
 			.event__footer
-				.event__buttons
+				.event__buttons.event__buttons--two.event__buttons--desktop
 					button.btn.btn--grey Отмена
 					button.btn Создать встречу
+
