@@ -19,15 +19,28 @@ html(lang="en")
 			.event__wrapper
 				.event__heading
 					.caption Новая встреча
-					.icon.icon--close
-				.event__body
+					.icon.icon--close.icon--nomob
+				.event__row
 					.event__col
-						.event__row
-							label(for="eventTheme").label Тема
-							input(type="text" id="eventTheme" placeholder="О чем будете говорить?").inpt.event__text-inpt
-						.event__row
-							label(for="eventUsersInpt").label Участники
-							input(type="text" id="eventUsersInpt" placeholder="Например, Тор Одинович" autofocus).inpt.event__text-inpt
+						label(for="eventTheme").label Тема
+						input(type="text" id="eventTheme" placeholder="О чем будете говорить?" value="").inpt.event__text-inpt
+					.event__col
+						.date-time-inpt
+							.date-time-inpt__date
+								label(for="eventDate").label Дата
+								input(type="text" value="14 декабря, 2017" id="eventDate").inpt.date-time-inpt__date-inpt
+							.date-time-inpt__time
+								.label Начало
+								input(type="text" value="16:00" pattern="[0-9]{2}:[0-9]{2}" placeholder="чч:мм").inpt.date-time-inpt__time-inpt
+								.date-time-inpt__separator &ndash;
+							.date-time-inpt__time
+								.label Конец
+								input(type="text" value="16:30" pattern="[0-9]{2}:[0-9]{2}" placeholder="чч:мм").inpt.date-time-inpt__time-inpt
+
+				.event__row
+					.event__col
+						label(for="eventUsersInpt").label Участники
+						input(type="text" id="eventUsersInpt" placeholder="Например, Тор Одинович" autofocus).inpt.event__text-inpt
 						.event__participants
 							.autocomplete
 								.autocomplete__wrapper
@@ -60,25 +73,10 @@ html(lang="en")
 										.user__name Йонду Удонта
 										.user__desc &middot; 2 этаж
 					.event__col
-						.event__row
-							.date-time-inpt
-								.date-time-inpt__date
-									label(for="eventDate").label Дата
-									input(type="text" value="14 декабря, 2017" id="eventDate").inpt.date-time-inpt__date-inpt
-								.date-time-inpt__time
-									.label Начало
-									input(type="text" value="16:00" pattern="[0-9]{2}:[0-9]{2}" placeholder="чч:мм").inpt.date-time-inpt__time-inpt
-									.date-time-inpt__separator &ndash;
-								.date-time-inpt__time
-									.label Конец
-									input(type="text" value="16:30" pattern="[0-9]{2}:[0-9]{2}" placeholder="чч:мм").inpt.date-time-inpt__time-inpt
-						.event__recomendations
-							.event__row
-								.label Ваша переговорка
-								.recomendation.recomendation--selected
-									span.recomendation__time 16:00 &ndash; 16:30
-									span.recomendation__room Готем &middot; 4 этаж
-
+						.label Ваша переговорка
+						.recomendation.recomendation--selected
+							span.recomendation__time 16:00 &ndash; 16:30
+							span.recomendation__room Готем &middot; 4 этаж
 			.event__footer
 				.event__buttons
 					button.btn.btn--grey Отмена
