@@ -1,20 +1,31 @@
 .date-time-inpt
   display: flex
-  //@media screen and (max-width: $content-width)
+  @media screen and (max-width: $content-width)
+    flex-direction: column
 
   &__date
     padding-right: 15px
-  //@media screen and (max-width: $content-width)
+    @media screen and (max-width: $content-width)
+      padding: 0
+
+  &__times
+    display: flex
+    @media screen and (max-width: $content-width)
+      margin-top: 8px
 
   &__time
     padding-left: 2px
-  //@media screen and (max-width: $content-width)
+    //@media screen and (max-width: $content-width)
 
   &__separator
     text-align: center
     width: 17px
-    display: inline-block
-  //@media screen and (max-width: $content-width)
+    display: flex
+    align-items: center
+    justify-content: center
+    padding-top: 15px
+    @media screen and (max-width: $content-width)
+      padding-top: 0
 
   &__date-inpt
     width: 238px
@@ -22,8 +33,10 @@
     background-repeat: no-repeat
     background-position-y: 50%
     background-position-x: 95%
-  //@media screen and (max-width: $content-width)
+    @media screen and (max-width: $content-width)
+      width: 100%
 
   &__time-inpt
     width: 72px
-    //@media screen and (max-width: $content-width)
+    @media screen and (max-width: $content-width)
+      width: 100%

@@ -22,7 +22,8 @@ html(lang="en")
 					.icon.icon--close.icon--nomob
 				.event__row
 					.event__col
-						label(for="eventTheme").label Тема
+						label(for="eventDate").label.label--desktop Дата
+						label(for="eventDate").label.label--touch Дата и время
 						input(type="text" id="eventTheme" placeholder="О чем будете говорить?" value="").inpt.event__text-inpt
 					.event__col
 						.date-time-inpt
@@ -30,11 +31,11 @@ html(lang="en")
 								label(for="eventDate").label Дата
 								input(type="text" value="14 декабря, 2017" id="eventDate").inpt.date-time-inpt__date-inpt
 							.date-time-inpt__time
-								.label Начало
+								.label.label--desktop Начало
 								input(type="text" value="16:00" pattern="[0-9]{2}:[0-9]{2}" placeholder="чч:мм").inpt.date-time-inpt__time-inpt
 								.date-time-inpt__separator &ndash;
 							.date-time-inpt__time
-								.label Конец
+								.label.label--desktop Конец
 								input(type="text" value="16:30" pattern="[0-9]{2}:[0-9]{2}" placeholder="чч:мм").inpt.date-time-inpt__time-inpt
 
 				.event__row

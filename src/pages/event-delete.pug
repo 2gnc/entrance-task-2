@@ -22,20 +22,24 @@ html(lang="en")
 						.icon.icon--close.icon--nomob
 					.event__row
 						.event__col
-							label(for="eventTheme").label Тема
+							label(for="eventDate").label Тема
+
 							input(type="text" id="eventTheme" placeholder="О чем будете говорить?" value="Тестовое задание в ШРИ").inpt.event__text-inpt
 						.event__col
 							.date-time-inpt
 								.date-time-inpt__date
-									label(for="eventDate").label Дата
+									label(for="eventDate").label.label--desktop Дата
+									label(for="eventDate").label.label--touch Дата и время
 									input(type="text" value="14 декабря, 2017" id="eventDate").inpt.date-time-inpt__date-inpt
-								.date-time-inpt__time
-									.label Начало
-									input(type="text" value="16:00" pattern="[0-9]{2}:[0-9]{2}" placeholder="чч:мм").inpt.date-time-inpt__time-inpt
+								.date-time-inpt__times
+									.date-time-inpt__time
+										.label.label--desktop Начало
+										input(type="text" value="16:00" pattern="[0-9]{2}:[0-9]{2}" placeholder="чч:мм").inpt.date-time-inpt__time-inpt
 									.date-time-inpt__separator &ndash;
-								.date-time-inpt__time
-									.label Конец
-									input(type="text" value="16:30" pattern="[0-9]{2}:[0-9]{2}" placeholder="чч:мм").inpt.date-time-inpt__time-inpt
+									.date-time-inpt__time
+										.label.label--desktop Конец
+										input(type="text" value="16:30" pattern="[0-9]{2}:[0-9]{2}" placeholder="чч:мм").inpt.date-time-inpt__time-inpt
+						.event__separator
 					.event__row
 						.event__col
 							label(for="eventUsersInpt").label Участники
@@ -53,23 +57,28 @@ html(lang="en")
 									img(src="https://yt3.ggpht.com/-2f7jk6z4gIM/AAAAAAAAAAI/AAAAAAAAAAA/38an6LUMtnc/s48-c-k-no-mo-rj-c0xffffff/photo.jpg").user__pic
 									.user__name.user__name--in-event Дарт Вейдер
 									.icon.icon--close
-						.event__col
+						.event__separator
+						.event__col.event__col--recomendation
 							.label Ваша переговорка
 							.recomendation.recomendation--selected
 								span.recomendation__time 16:00 &ndash; 16:30
 								span.recomendation__room Готем &middot; 4 этаж
 				.event__footer
-					.event__buttons.event__buttons--three
+					.event__buttons.event__buttons--three.event__buttons--desktop
 						button.btn.btn--grey Отмена
 						button.btn.btn--grey Удалить встречу
 						button.btn.btn--grey Сохранить
+					.event__buttons.event__buttons--touch
+						.event__buttons--two
+							button.btn.btn--grey Отмена
+							button.btn Сохранить
 		.modal
 			.modal__msg
 				.modal__row.modal__row--icon
 					img(src="../img/emoji1.svg")
 				.modal__row.modal__row--info
-					.caption Встреча будет
-					.caption удалена безвозвратно!
+					.caption Встреча будет удалена
+					.caption безвозвратно!
 				.modal__row.modal__row--btn
 					.btn.btn--grey Отмена
 					.btn.btn--grey Удалить

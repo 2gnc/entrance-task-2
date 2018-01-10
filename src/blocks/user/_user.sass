@@ -1,6 +1,7 @@
 .user
   display: flex
   align-items: center
+  //@media screen and (max-width: $content-width)
 
   &--in-event
     border-radius: 16px
@@ -9,27 +10,48 @@
     margin-bottom: 2px
     margin-right: 7px
     padding-right: 4px
+    @media screen and (max-width: $content-width)
+      height: 32px
+      margin: 0
+      margin-bottom: 8px
+      display: flex
+      justify-content: space-between
+      width: 100%
+
+      &:last-child
+        margin-bottom: 0
 
   &--listed
     height: 34px
+    //@media screen and (max-width: $content-width)
 
     &:hover
       background-color: $chartbg
       cursor: pointer
+      //@media screen and (max-width: $content-width)
 
   &__pic
     width: 24px
     height: 24px
     margin-right: 9px
     border-radius: 50%
+    @media screen and (max-width: $content-width)
+      width: 32px
+      height: 32px
 
   &__name
     margin-right: 5px
     line-height: 24px
     font-family: $fontr
+    //@media screen and (max-width: $content-width)
 
     &--in-event
       margin-right: 10px
+      @media screen and (max-width: $content-width)
+        margin: 0
+        flex-grow: 1
+        font-size: 15px
 
   &__desc
     color: $past
+    //@media screen and (max-width: $content-width)

@@ -3,21 +3,30 @@
   flex-direction: column
   //@media screen and (max-width: $content-width)
 
+  &__separator
+    display: none
+    @media screen and (max-width: $content-width)
+      display: block
+      width: 100vw
+      height: 8px
+      background-color: $bordercolor
+
   &__wrapper
     width: 880px
     min-height: 570px
     margin: 0 auto
     padding: 0 4px
-    //@media screen and (max-width: $content-width)
-
-  &__body
-  //@media screen and (max-width: $content-width)
+    @media screen and (max-width: $content-width)
+      width: 100%
+      padding: 43px 0 0 0 // 16px 0 16px
 
   &__heading
     margin-top: 30px
     display: flex
     justify-content: space-between
-    //@media screen and (max-width: $content-width)
+    @media screen and (max-width: $content-width)
+      margin-bottom: 15px
+      margin-left: 16px
 
   &__row
     display: flex
@@ -26,9 +35,19 @@
     margin-bottom: 27px
     @media screen and (max-width: $content-width)
       flex-direction: column
+      margin-top: 0
+      margin-bottom: 20px
 
   &__col
     width: 48%
+    @media screen and (max-width: $content-width)
+      width: 100%
+      margin: 0 0 19px 0
+      padding: 0 16px
+    &--recomendation
+      @media screen and (max-width: $content-width)
+        margin-top: 18px
+        margin-bottom: 11px
 
   &__text-inpt
     width: 100%
@@ -39,7 +58,26 @@
     margin-top: 8px
     display: flex
     flex-wrap: wrap
-    //@media screen and (max-width: $content-width)
+    @media screen and (max-width: $content-width)
+      margin-top: 11px
+
+  &__block
+    width: 100%
+    display: flex
+    justify-content: space-between
+    @media screen and (max-width: $content-width)
+      display: block
+      padding: 0 16px
+      border-bottom: 8px solid $bordercolor
+
+    &--touch
+      display: none
+      @media screen and (max-width: $content-width)
+        display: block
+        border-bottom: 8px solid $bordercolor
+
+    &--recomendations
+      padding-top: 18px
 
   &__footer
     width: 100%
@@ -48,7 +86,9 @@
     display: flex
     align-items: center
     justify-content: center
-    //@media screen and (max-width: $content-width)
+    @media screen and (max-width: $content-width)
+      height: auto
+      border-top: none
 
   &__buttons
     width: 235px
@@ -59,3 +99,22 @@
     &--three
       width: 355px
       //@media screen and (max-width: $content-width)
+
+    &--two
+      @media screen and (max-width: $content-width)
+        width: 262px
+        padding-right: 16px
+        display: flex
+        align-self: flex-end
+        justify-content: space-between
+
+    &--desktop
+      @media screen and (max-width: $content-width)
+        display: none
+
+    &--touch
+      display: none
+      @media screen and (max-width: $content-width)
+        width: 100%
+        display: flex
+        flex-direction: column

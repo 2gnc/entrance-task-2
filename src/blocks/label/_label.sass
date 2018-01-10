@@ -3,3 +3,12 @@
   display: block
   font-family: $fontb
   letter-spacing: 0.2px
+
+  &--desktop
+    @media screen and (max-width: $content-width)
+      display: none
+
+  &--touch
+    display: none
+    @media screen and (max-width: $content-width)
+      display: block
