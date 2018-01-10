@@ -56,7 +56,7 @@ gulp.task( 'sync', function() {
 	});
 
 gulp.task( 'dev', ['sync', 'css', 'html', 'js'], function() {
-	gulp.watch( 'src/**/**/**/**.**', ['css', 'html', 'js'] );
+	gulp.watch( 'src/**/*.*', ['css', 'html', 'js'] );
 });
 
 gulp.task( 'production', ['css', 'html', 'js'], function() {
