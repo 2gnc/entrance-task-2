@@ -19,30 +19,12 @@ html(lang="en")
 				.event__wrapper
 					.event__heading
 						.caption Редактирование встречи
-						.icon.icon--close
-					.event__body
-						.event__col
-							.event__row
+						.icon.icon--close.icon--nomob
+					.event__row
+							.event__col
 								label(for="eventTheme").label Тема
 								input(type="text" id="eventTheme" placeholder="О чем будете говорить?" value="Тестовое задание в ШРИ").inpt.event__text-inpt
-							.event__row
-								label(for="eventUsersInpt").label Участники
-								input(type="text" id="eventUsersInpt" placeholder="Например, Тор Одинович").inpt.event__text-inpt
-							.event__participants
-								.user.user--in-event
-									img(src="https://pbs.twimg.com/profile_images/660254077947744256/tTt22r3f.png").user__pic
-									.user__name.user__name--in-event Лекс Лютер
-									.icon.icon--close
-								.user.user--in-event
-									img(src="https://i.mycdn.me/image?id=858985521355&ts=00000000ca0000031b&plc=WEB&tkn=*mSbbxyd2u6Q3hZMyXBNdpg-nDqo&fn=sqr_64").user__pic
-									.user__name.user__name--in-event Томас Андерсон
-									.icon.icon--close
-								.user.user--in-event
-									img(src="https://yt3.ggpht.com/-2f7jk6z4gIM/AAAAAAAAAAI/AAAAAAAAAAA/38an6LUMtnc/s48-c-k-no-mo-rj-c0xffffff/photo.jpg").user__pic
-									.user__name.user__name--in-event Дарт Вейдер
-									.icon.icon--close
-						.event__col
-							.event__row
+							.event__col
 								.date-time-inpt
 									.date-time-inpt__date
 										label(for="eventDate").label Дата
@@ -54,12 +36,28 @@ html(lang="en")
 									.date-time-inpt__time
 										.label Конец
 										input(type="text" value="16:30" pattern="[0-9]{2}:[0-9]{2}" placeholder="чч:мм").inpt.date-time-inpt__time-inpt
-							.event__recomendations
-								.event__row
-									.label Ваша переговорка
-									.recomendation.recomendation--selected
-										span.recomendation__time 16:00 &ndash; 16:30
-										span.recomendation__room Готем &middot; 4 этаж
+					.event__row
+							.event__col
+								label(for="eventUsersInpt").label Участники
+								input(type="text" id="eventUsersInpt" placeholder="Например, Тор Одинович").inpt.event__text-inpt
+								.event__participants
+									.user.user--in-event
+										img(src="https://pbs.twimg.com/profile_images/660254077947744256/tTt22r3f.png").user__pic
+										.user__name.user__name--in-event Лекс Лютер
+										.icon.icon--close
+									.user.user--in-event
+										img(src="https://i.mycdn.me/image?id=858985521355&ts=00000000ca0000031b&plc=WEB&tkn=*mSbbxyd2u6Q3hZMyXBNdpg-nDqo&fn=sqr_64").user__pic
+										.user__name.user__name--in-event Томас Андерсон
+										.icon.icon--close
+									.user.user--in-event
+										img(src="https://yt3.ggpht.com/-2f7jk6z4gIM/AAAAAAAAAAI/AAAAAAAAAAA/38an6LUMtnc/s48-c-k-no-mo-rj-c0xffffff/photo.jpg").user__pic
+										.user__name.user__name--in-event Дарт Вейдер
+										.icon.icon--close
+							.event__col
+								.label Ваша переговорка
+								.recomendation.recomendation--selected
+									span.recomendation__time 16:00 &ndash; 16:30
+									span.recomendation__room Готем &middot; 4 этаж
 				.event__footer
 					.event__buttons.event__buttons--three
 						button.btn.btn--grey Отмена
