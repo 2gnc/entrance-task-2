@@ -63,3 +63,11 @@ gulp.task( 'production', ['css', 'html', 'js'], function() {
 	return
 });
 
+gulp.task( 'rawhtml', function(){
+	return gulp.src('src/pages/*.pug')
+			.pipe( pug({
+				pretty: ' '
+			}) )
+			.pipe( gulp.dest( 'temp/' ) )
+} );
+
