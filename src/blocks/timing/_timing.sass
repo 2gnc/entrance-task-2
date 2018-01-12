@@ -46,6 +46,9 @@
 
   &__date
     display: flex
+    min-width: 148px
+    @media screen and (max-width: $content-width)
+      min-width: 0
 
   &__label
     text-align: center
