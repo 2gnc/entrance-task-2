@@ -115,8 +115,10 @@
     height: 100%
     background-color: $eventhovercolor
 
-    &--w24
-      width: calc(2px + 132px)
+@for $i from 1 through 72
+  .schedule__event--w#{$i}
+    width: calc( 2px + (5.5 * #{$i})px )
+
 
     &--w19f
       width: calc(2px + 15px + 66px)
