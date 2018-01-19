@@ -59,10 +59,6 @@ gulp.task( 'dev', ['sync', 'css', 'html', 'js'], function() {
 	gulp.watch( 'src/**/*.*', ['css', 'html', 'js'] );
 });
 
-gulp.task( 'production', ['css', 'html', 'js'], function() {
-	return
-});
-
 gulp.task( 'rawhtml', function(){
 	return gulp.src('src/pages/*.pug')
 			.pipe( pug({
