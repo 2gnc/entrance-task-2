@@ -96,6 +96,9 @@
     display: inline-block
     cursor: pointer
 
+    &--empty:hover >  .btn--newevent
+      visibility: visible
+
     &:hover > .schedule__event
       visibility: visible
 
@@ -154,3 +157,4 @@
     .schedule__innerslot--emptyw#{$i}
       background-color: $noeventcolor
       width: 100%
+
